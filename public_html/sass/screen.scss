@@ -1,6 +1,117 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+@import "helpers/flex";
+
+html {
+	font-size: 67%;
+}
+body {
+	@extend %reset;
+	@include rem(font-size, 1.6rem);
+	font-family: "Helvetica";
+	// background: url(../images/bg-tech-white.jpg);
+	line-height: 1.4;
+	color: lighten(black, 15%);
+}
+h1, h2, h3, h4, p, ul {
+	@extend %reset;
+	font-weight: normal;
+}
+ul {
+	@include rem(padding-left, 1.6rem);
+}
+div {
+	padding: 5px;
+	// border: 1px solid gray;
+}
+
+#page {
+	max-width: 1000px;
+	margin: 40px auto;
+	@media(min-width: 500px) {padding: 10px;}
+	@media(min-width: 800px) {padding: 40px;}
+	background: darken(white, 3%);
+	background: url(../images/pattern-paper.png);
+	@include box-shadow(1px 1px 5px gray);
+}
+#header {
+	.region {
+		padding-bottom: 40px;
+		div {
+			padding: 2px;
+		}
+	}
+	.region:first-child {
+		@include flex(1 1 0);
+	}
+}
+.group, #portfolio .block {
+	border-bottom: 1px solid lightgray;
+}
+#portfolio .block:last-child {
+	border-bottom: none;
+}
+h1 {
+	@include rem(font-size, 2.6rem);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-family: "Georgia";
+}
+h2 {
+	@include rem(font-size, 1.2rem);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-style: italic; 
+}
+h3 {
+	@include rem(font-size, 2rem);
+	font-style: italic;
+	font-family: "Georgia";
+}
+h4 {
+	@include rem(font-size, 1.8rem);
+	@include text-shadow(0 1px 0 gray);
+	margin-top: 0.3rem;
+}
+$link: darkred;
+a, a:link, a:visited {
+	color: $link;
+}
+a:hover {
+	color: lighten($link, 15%);
+}
+a:active {
+	color: darken($link, 15%);
+}
+#technical {
+	.region:last-child {
+		.block {
+			@include flexbox;
+			@include flex-wrap(wrap);
+			i {@include rem(font-size, 4rem);}
+			i + p {display: none;}
+		}
+	}
+}
+@media(min-width: 600px) {
+	.group {
+		@include flexbox;
+		.region:first-child {
+			min-width: 130px;
+		}
+	}
+	#header {
+		.group {
+			@include align-items(center);
+		}
+	}
+}
+@media(min-width: 800px) {
+	#services {
+		.region:last-child {
+			@include flexbox;
+		}
+	}
+}
