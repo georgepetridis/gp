@@ -1,4 +1,4 @@
-## Laravel PHP Framework
+## [My Website](http://georgepetridis.com) Built With The Laravel PHP Framwork
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
 [![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
@@ -16,7 +16,7 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 ## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+There is no need to contribute to this project as it's simply a personal resume website. But you are welcome to use the code for learning purposes.
 
 ## Security Vulnerabilities
 
