@@ -9,16 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div id="language">
+    @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+        <span>
+            <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                {{{ $properties['native'] }}}
+            </a>
+        </span>
+    @endforeach
+</div>
 <div id="page">
-    <ul class="">
-        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-            <li>
-                <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                    {{{ $properties['native'] }}}
-                </a>
-            </li>
-        @endforeach
-    </ul>
 @yield('content')
 </div>
 </body>

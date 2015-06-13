@@ -16,7 +16,7 @@
                 </div>
                 <div class="block">
                     <div class="content">       
-                        <h2>{{{ $data['body']['title'] }}}</h2>   
+                        <h2>{{{ $data['header']['title'] }}}</h2>   
                     </div>
                 </div>
             </div>
@@ -73,10 +73,10 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <h4>Web Design</h4>
+                        <h4>{{ $data['services']['service1']['title'] }}</h4>
                     </div>
                     <div class="content">
-                        <p>Mobile device friendly designs aimed at helping your business grow.</p>
+                        <p>{{ $data['services']['service1']['content'] }}</p>
                     </div>
                 </div>
                 <div class="block">
@@ -255,6 +255,7 @@
                     <div class="content">
                         <!-- <img src="images/george-petridis-web-developer-montreal.jpg"> -->
                         <p>&copy George Petridis 2014 - <?php echo date('Y'); ?></p>
+                        <p>{{{ "Updated on: ".date("F d Y .", filemtime(__FILE__)) }}}</p>
                     </div>
                 </div>
             </div>

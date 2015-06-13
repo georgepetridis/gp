@@ -26,7 +26,13 @@ div {
 	padding: 5px;
 	// border: 1px solid gray;
 }
-
+#language {
+	max-width: 1000px;
+	margin: 0 auto;
+	span {
+		padding: 10px;
+	}
+}
 #page {
 	max-width: 1000px;
 	margin: 40px auto;
