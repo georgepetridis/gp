@@ -11,12 +11,12 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <h1>George Petridis</h1>
+                        <h1>{{{ $name }}}</h1>
                     </div>
                 </div>
                 <div class="block">
                     <div class="content">       
-                        <h2>Web Programmer and Developer</h2>   
+                        <h2>{{{ $data['body']['title'] }}}</h2>   
                     </div>
                 </div>
             </div>
