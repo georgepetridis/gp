@@ -250,11 +250,11 @@
 
     <footer class="container" id="footer">
         <div class="group">
-            <div clas="region">
+            <div class="region">
                 <div class="block">
                     <div class="content">
                         <!-- <img src="images/george-petridis-web-developer-montreal.jpg"> -->
-                        <p>&copy George Petridis 2014 - <?php echo date('Y'); ?></p>
+                        <p>&copy; George Petridis 2014 - <?php echo date('Y'); ?></p>
                         <p>{{{ "Updated on: ".date("F d Y .", filemtime(__FILE__)) }}}</p>
                     </div>
                 </div>
