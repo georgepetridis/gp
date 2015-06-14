@@ -28,16 +28,17 @@ div {
 	padding: 5px;
 	// border: 1px solid gray;
 }
-#language {
+#top-bar {
 	max-width: 1000px;
 	margin: 0 auto;
-	span {
-		padding: 10px;
+	.region {
+		@include flexbox;
+		@include align-items(center);
 	}
 }
 #page {
 	max-width: 1000px;
-	margin: 40px auto;
+	margin: 0 auto;
 	@media(min-width: 500px) {padding: 10px;}
 	@media(min-width: 800px) {padding: 40px;}
 	background: darken(white, 3%);
@@ -55,8 +56,10 @@ div {
 		@include flex(1 1 0);
 	}
 }
-.group, #portfolio .block {
-	border-bottom: 1px solid lightgray;
+#page {
+	.group, #portfolio .block {
+		border-bottom: 1px solid lightgray;
+	}
 }
 #portfolio .block:last-child {
 	border-bottom: none;
@@ -123,3 +126,5 @@ a:active {
 		}
 	}
 }
+@import "socicon/socicon";
+// @import "helpers/wireframe";

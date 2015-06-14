@@ -53,7 +53,7 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <p>I program websites even when I'm not paid to do it. I love to learn and use the latest technology. I also provide website hosting, design, search engine optimization and everything else in between.</p>
+                        <p>{{ $data['profile']['content'] }}</p>
                     </div>
                 </div>
             </div>
@@ -81,18 +81,18 @@
                 </div>
                 <div class="block">
                     <div class="content">
-                        <h4>Web Hosting</h4>
+                        <h4>{{ $data['services']['service2']['title'] }}</h4>
                     </div>
                     <div class="content">
-                        <p>Your own personal computer serving your website to the world. Get your website online with my affordable hosting packages.</p>
+                        <p>{{ $data['services']['service2']['content'] }}</p>
                     </div>
                 </div>
                 <div class="block">
                     <div class="content">
-                        <h4>Project Management</h4>
+                        <h4>{{ $data['services']['service3']['title'] }}</h4>
                     </div>
                     <div class="content">
-                        <p>Websites are complex. I manage every aspect of your project so you can get back to business.</p>
+                        <p>{{ $data['services']['service3']['content'] }}</p>
                     </div>
                 </div>
             </div>

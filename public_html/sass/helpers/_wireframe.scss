@@ -2,7 +2,5 @@
 .region {border: 1px solid red;}
 .block {border: 1px solid black;}
 .content {border: 1px solid cyan;}
-#page {
-	h1, h2, h3, p, li {border: 1px dotted gray;}
-	a {border: 1px dotted blue;}
-}
+h1, h2, h3, p, li {border: 1px dotted gray;}
+a {border: 1px dotted blue;}
