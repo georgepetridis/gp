@@ -6,6 +6,8 @@
 @import "devicon/devicon";
 @import "devicon/devicon.colors";
 
+$blue: #0480ab;
+
 html {
 	font-size: 67%;
 }
@@ -23,6 +25,12 @@ h1, h2, h3, h4, p, ul {
 }
 ul {
 	@include rem(padding-left, 1.6rem);
+}
+a {
+	display: inline-block;
+}
+img {
+	vertical-align: middle;
 }
 div {
 	padding: 5px;
@@ -47,7 +55,7 @@ div {
 }
 #header {
 	.region {
-		padding-bottom: 40px;
+		// padding-bottom: 40px;
 		div {
 			padding: 2px;
 		}
@@ -55,10 +63,13 @@ div {
 	.region:first-child {
 		@include flex(1 1 0);
 	}
+	margin-left: 90px;
+	height: 252px;
 }
 #page {
+	background: url(../images/computer-front.jpg) no-repeat, url(../images/header-bg.jpg) repeat-x;
 	.group, #portfolio .block {
-		border-bottom: 1px solid lightgray;
+		// border-bottom: 1px solid lightgray;
 	}
 }
 #portfolio .block:last-child {
@@ -86,7 +97,7 @@ h4 {
 	@include text-shadow(0 1px 0 gray);
 	margin-top: 0.3rem;
 }
-$link: darkred;
+$link: $blue;
 a, a:link, a:visited {
 	color: $link;
 }
@@ -126,5 +137,5 @@ a:active {
 		}
 	}
 }
-@import "socicon/socicon";
-// @import "helpers/wireframe";
+// @import "socicon/socicon";
+@import "helpers/wireframe";

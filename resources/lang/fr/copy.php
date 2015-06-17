@@ -17,15 +17,15 @@ return [
 		],
 		'services' => [
 			'title' => 'Services',
-			'service1' => [
+			'1' => [
 				'title' => 'Conception Web',
 				'content' => 'Des sites web conçus pour toutes les formats d\'ecrans.',
 			],
-			'service2' => [
+			'2' => [
 				'title' => 'Hébergement Web',
 				'content' => 'Je fournis des locaux abordables sur un serveur qui donne à votre site web accessibilité via l\'internet.',
 			],
-			'service3' => [
+			'3' => [
 				'title' => 'Gestion De Projet',
 				'content' => 'Un site web est complexe. Je gère tous les aspects de votre projet afin que vous puissiez revenir aux affaires.',
 			],

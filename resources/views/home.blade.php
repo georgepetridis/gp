@@ -73,26 +73,26 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <h4>{{ $data['services']['service1']['title'] }}</h4>
+                        <h4>{{ $data['services']['1']['title'] }}</h4>
                     </div>
                     <div class="content">
-                        <p>{{ $data['services']['service1']['content'] }}</p>
-                    </div>
-                </div>
-                <div class="block">
-                    <div class="content">
-                        <h4>{{ $data['services']['service2']['title'] }}</h4>
-                    </div>
-                    <div class="content">
-                        <p>{{ $data['services']['service2']['content'] }}</p>
+                        <p>{{ $data['services']['1']['content'] }}</p>
                     </div>
                 </div>
                 <div class="block">
                     <div class="content">
-                        <h4>{{ $data['services']['service3']['title'] }}</h4>
+                        <h4>{{ $data['services']['2']['title'] }}</h4>
                     </div>
                     <div class="content">
-                        <p>{{ $data['services']['service3']['content'] }}</p>
+                        <p>{{ $data['services']['2']['content'] }}</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['services']['3']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ $data['services']['3']['content'] }}</p>
                     </div>
                 </div>
             </div>
@@ -144,13 +144,13 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <h4>Loeys-Dietz Canada Syndrome Foundation</h4>
+                        <h4>{{ $data['portfolio']['1']['title'] }}</h4>
                     </div>
                     <div class="content">
                         <a href="http://loeysdietzcanada.org" target="blank">loeysdietzcanada.org</a>
                     </div>
                     <div class="content">
-                        <p>Collaborated with the president of the foundation to bring a brand new website online. This is a large scale project involving several stakeholders. Ongoing site maintenance is required so I've also assumed the role of Webmaster.</p>
+                        <p>{{ $data['portfolio']['1']['summary'] }}</p>
                     </div>
                     <div class="content">
                         <ul>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="block">
                     <div class="content">
-                        <h4>Stergios Paysagist</h4>
+                        <h4>{{ $data['portfolio']['2']['title'] }}</h4>
                     </div>
                     <div class="content">
                         <a href="http://stergios.ca" target="blank">stergios.ca</a>
@@ -182,7 +182,7 @@
                 </div>
                 <div class="block">
                     <div class="content">
-                        <h4>Roxy's Designs</h4>
+                        <h4>{{ $data['portfolio']['3']['title'] }}</h4>
                     </div>
                     <div class="content">
                         <a href="http://roxysdesigns.ca" target="blank">roxysdesigns.ca</a>
@@ -201,13 +201,13 @@
 
                 <div class="block">
                     <div class="content">
-                        <h4>Cool Basslines</h4>
+                        <h4>{{ $data['portfolio']['4']['title'] }}</h4>
                     </div>
                     <div class="content">
                         <a href="http://coolbasslines.com" target="blank">coolbasslines.com</a>
                     </div>
                     <div class="content">
-                        <p>Personal project involving responsive mobile first web design and a custom grid system that I developed</p>
+                        <p>Personal project involving responsive mobile first web design and a custom grid system that I developed.</p>
                     </div>
                 </div>
 

@@ -1,6 +1,4 @@
-@charset "UTF-8";
 /* Makes it possible to use the useful rem and have a pixel size fallback. */
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 body, h1, h2, h3, h4, p, ul {
   margin: 0;
   padding: 0;
@@ -1069,6 +1067,14 @@ ul {
   padding-left: 1.6rem;
 }
 
+a {
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
 div {
   padding: 5px;
 }
@@ -1110,8 +1116,9 @@ div {
   }
 }
 
-#header .region {
-  padding-bottom: 40px;
+#header {
+  margin-left: 90px;
+  height: 252px;
 }
 #header .region div {
   padding: 2px;
@@ -1125,8 +1132,8 @@ div {
   flex: 1 1 0;
 }
 
-#page .group, #page #portfolio .block {
-  border-bottom: 1px solid lightgray;
+#page {
+  background: url(../images/computer-front.jpg) no-repeat, url(../images/header-bg.jpg) repeat-x;
 }
 
 #portfolio .block:last-child {
@@ -1164,15 +1171,15 @@ h4 {
 }
 
 a, a:link, a:visited {
-  color: darkred;
+  color: #0480ab;
 }
 
 a:hover {
-  color: #d70000;
+  color: #06b8f6;
 }
 
 a:active {
-  color: #3f0000;
+  color: #024860;
 }
 
 #technical .region:last-child .block {
@@ -1223,254 +1230,30 @@ a:active {
     display: flex;
   }
 }
-.icon--vimeo::before {
-  content: "";
+.container {
+  border: 1px solid coral;
 }
 
-.social__icon--vimeo {
-  background-color: #4dbfe3;
-}
-.social__icon--vimeo:hover {
-  background-color: #41a2c1;
+.group {
+  border: 1px solid green;
 }
 
-.icon--twitter::before {
-  content: "";
+.region {
+  border: 1px solid red;
 }
 
-.social__icon--twitter {
-  background-color: #32b9e7;
-}
-.social__icon--twitter:hover {
-  background-color: #2b9dc4;
+.block {
+  border: 1px solid black;
 }
 
-.icon--facebook::before {
-  content: "";
+.content {
+  border: 1px solid cyan;
 }
 
-.social__icon--facebook {
-  background-color: #4b70ab;
-}
-.social__icon--facebook:hover {
-  background-color: #405f91;
+h1, h2, h3, p, li {
+  border: 1px dotted gray;
 }
 
-.icon--googleplus::before {
-  content: "";
-}
-
-.social__icon--googleplus {
-  background-color: #fa5432;
-}
-.social__icon--googleplus:hover {
-  background-color: #d5472b;
-}
-
-.icon--pintrest::before {
-  content: "";
-}
-
-.social__icon--pintrest {
-  background-color: #d63533;
-}
-.social__icon--pintrest:hover {
-  background-color: #b62d2b;
-}
-
-.icon--linkedin::before {
-  content: "";
-}
-
-.social__icon--linkedin {
-  background-color: #0087be;
-}
-.social__icon--linkedin:hover {
-  background-color: #0073a2;
-}
-
-.icon--dribble::before {
-  content: "";
-}
-
-.social__icon--dribble {
-  background-color: #fc89b1;
-}
-.social__icon--dribble:hover {
-  background-color: #d67496;
-}
-
-.icon--stumbleupon::before {
-  content: "";
-}
-
-.social__icon--stumbleupon {
-  background-color: #f15d29;
-}
-.social__icon--stumbleupon:hover {
-  background-color: #cd4f23;
-}
-
-.icon--lastfm::before {
-  content: "";
-}
-
-.social__icon--lastfm {
-  background-color: #e42124;
-}
-.social__icon--lastfm:hover {
-  background-color: #c21c1f;
-}
-
-.icon--instagram::before {
-  content: "";
-}
-
-.social__icon--instagram {
-  background-color: #6291b2;
-}
-.social__icon--instagram:hover {
-  background-color: #537b97;
-}
-
-.icon--dropbox::before {
-  content: "";
-}
-
-.social__icon--dropbox {
-  background-color: #167ab6;
-}
-.social__icon--dropbox:hover {
-  background-color: #13689b;
-}
-
-.icon--picasa::before {
-  content: "";
-}
-
-.social__icon--picasa {
-  background-color: #c49aca;
-}
-.social__icon--picasa:hover {
-  background-color: #a783ac;
-}
-
-.icon--soundcloud::before {
-  content: "";
-}
-
-.social__icon--soundcloud {
-  background-color: #fb740b;
-}
-.social__icon--soundcloud:hover {
-  background-color: #d56309;
-}
-
-.icon--behance::before {
-  content: "";
-}
-
-.social__icon--behance {
-  background-color: #33abdb;
-}
-.social__icon--behance:hover {
-  background-color: #2b91ba;
-}
-
-.icon--skype::before {
-  content: "";
-}
-
-.social__icon--skype {
-  background-color: #00AFF0;
-}
-.social__icon--skype:hover {
-  background-color: #0095cc;
-}
-
-.icon--github::before {
-  content: "";
-}
-
-.social__icon--github {
-  background-color: #333333;
-}
-.social__icon--github:hover {
-  background-color: #2b2b2b;
-}
-
-.icon--flickr::before {
-  content: "";
-}
-
-.social__icon--flickr {
-  background-color: #333333;
-}
-.social__icon--flickr:hover {
-  background-color: #2b2b2b;
-}
-
-.icon--rdio::before {
-  content: "";
-}
-
-.social__icon--rdio {
-  background-color: #0086CD;
-}
-.social__icon--rdio:hover {
-  background-color: #0072ae;
-}
-
-.icon--evernote::before {
-  content: "";
-}
-
-.social__icon--evernote {
-  background-color: #aaca62;
-}
-.social__icon--evernote:hover {
-  background-color: #91ac53;
-}
-
-.icon--rss::before {
-  content: "";
-}
-
-.social__icon--rss {
-  background-color: #FB7629;
-}
-.social__icon--rss:hover {
-  background-color: #d56423;
-}
-
-.social__item {
-  display: inline-block;
-}
-.social__item a {
-  color: white;
-}
-
-.icon, [class^="icon--"] {
-  font-family: 'entypo';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.social__icon, [class^="social__icon"] {
-  font-size: 1em;
-  color: white;
-  text-decoration: none;
-  border-radius: 100%;
-  width: 2.2em;
-  height: 2.2em;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+a {
+  border: 1px dotted blue;
 }

@@ -2,6 +2,7 @@
 <html lang="{{ LaravelLocalization::getCurrentLocale() }}">
 <head>
 	<title>{{{ $data['head']['title'] or '' }}} | {{ $name or '' }}</title>
+    <meta name="google-site-verification" content="">
 	<meta charset="UTF-8">
 	<meta name="description" content="{{{ $data['head']['description'] or '' }}}">
 	<meta name="author" content="George Petridis">
@@ -24,7 +25,7 @@
             <div class="block">
                 <!-- social__item linkedin -->
                 <div class="social__item content">
-                        <a target="_blank" href="https://ca.linkedin.com/in/georgepetridis" class="social__icon--linkedin"><i class="icon--linkedin"></i></a>
+                        <a target="_blank" href="https://ca.linkedin.com/in/georgepetridis"><img src="images/linkedIn-logo-32x32.png"></a>
                 </div>
                 <!-- /social__item linkedin -->
             </div>
