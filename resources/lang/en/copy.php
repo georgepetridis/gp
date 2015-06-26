@@ -9,11 +9,11 @@ return [
 		],
 		'header' => [
 			'name' => 'George Petridis',
-			'title' => 'Web Programmer and Developer',
+			'title' => 'Web Developer',
 		],
 		'profile' => [
 			'title' => 'Profile',
-			'content' => 'I aim to always improve my workflow and implement the latest technology. My goal is to be free to conceptualize by programming computers to perform routine tasks.',
+			'content' => 'I aim to constantly improve my workflow and implement the latest technology. My goal is to deliver high quality websites optimized for search engines and mobile devices so that businesses get the most out of their online profiles.',
 		],
 		'services' => [
 			'title' => 'Services',

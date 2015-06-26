@@ -34,6 +34,7 @@
                 </div><!-- /.block -->
             </div><!-- /.region -->
 
+
         </div><!-- /.group -->
 
     </header><!-- /.container -->
@@ -250,15 +251,24 @@
 
     <footer class="container" id="footer">
         <div class="group">
+            <div class="region" id="photo">
+                <div class="block">
+                    <div class="content">
+                        <!-- <img id="clip" src="images/paperclip.png"> -->
+                        <img id="george" src="images/george-petridis-web-developer.jpg">
+                    </div>
+                </div>
+            </div>
             <div class="region">
                 <div class="block">
                     <div class="content">
                         <!-- <img src="images/george-petridis-web-developer-montreal.jpg"> -->
                         <p>&copy; George Petridis 2014 - <?php echo date('Y'); ?></p>
-                        <p>{{{ "Updated on: ".date("F d Y .", filemtime(__FILE__)) }}}</p>
+                        <p>{{{ "Updated on: ".date("F d Y", filemtime(__FILE__)) }}}</p>
                     </div>
                 </div>
             </div>
+
         </div>
     </footer>
 

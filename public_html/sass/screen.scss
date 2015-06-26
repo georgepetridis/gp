@@ -33,11 +33,15 @@ img {
 	vertical-align: middle;
 }
 div {
-	padding: 5px;
+	// padding: 5px;
 	// border: 1px solid gray;
 }
+.group {padding: 5px;}
+.region {padding: 5px;}
+.block {padding: 5px;}
+.content {padding: 5px;}
 #top-bar {
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
 	.region {
 		@include flexbox;
@@ -45,26 +49,41 @@ div {
 	}
 }
 #page {
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
-	@media(min-width: 500px) {padding: 10px;}
-	@media(min-width: 800px) {padding: 40px;}
+	// @media(min-width: 500px) {padding: 10px;}
+	// @media(min-width: 800px) {padding: 40px;}
 	background: darken(white, 3%);
 	background: url(../images/pattern-paper.png);
 	@include box-shadow(1px 1px 5px gray);
 }
 #header {
 	.region {
-		// padding-bottom: 40px;
-		div {
-			padding: 2px;
-		}
+		background-color: rgba(255,255,255,0.8);
 	}
 	.region:first-child {
 		@include flex(1 1 0);
 	}
-	margin-left: 90px;
-	height: 252px;
+	@media(min-width: 450px) {
+		margin-left: 130px;
+	}
+	// margin-left: 130px;
+	height: 282px; // spans the height of the background image.
+}
+#photo {
+	// padding: 0;
+	// .block {padding: 0;}
+	.content {
+		// @include transform(rotate(5deg));
+		padding: 0;		
+		border: 10px solid darken(white, 2%);
+		// @include border-radius(50%);
+		@include box-shadow(0 1px 1px gray);
+
+	}
+}
+#george {
+	height: 200px;
 }
 #page {
 	background: url(../images/computer-front.jpg) no-repeat, url(../images/header-bg.jpg) repeat-x;
@@ -72,14 +91,31 @@ div {
 		// border-bottom: 1px solid lightgray;
 	}
 }
+#main {
+	> .group {
+		.region {
+			// border-bottom: 1px solid gray;
+		}
+		border-bottom: 1px solid lightgray;
+	}
+}
 #portfolio .block:last-child {
-	border-bottom: none;
+	// border-bottom: none;
+}
+#footer {
+	.group {
+		@include flexbox;
+		@include align-items(flex-end);
+
+	}
 }
 h1 {
-	@include rem(font-size, 2.6rem);
-	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-family: "Georgia";
+	@include rem(font-size, 2.2rem);
+	// text-transform: uppercase;
+	letter-spacing: 1px;
+	// font-family: "Georgia";
+	color: $blue;
+	// text-align: right;
 }
 h2 {
 	@include rem(font-size, 1.2rem);
@@ -117,6 +153,7 @@ a:active {
 		}
 	}
 }
+
 @media(min-width: 600px) {
 	.group {
 		@include flexbox;
