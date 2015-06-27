@@ -59,13 +59,16 @@ div {
 }
 #header {
 	.region {
-		background-color: rgba(255,255,255,0.8);
+		background-color: rgba(255,255,255,0.6);
+		text-align: right;
 	}
 	.region:first-child {
 		@include flex(1 1 0);
 	}
 	@media(min-width: 450px) {
 		margin-left: 130px;
+		.group {margin-top: 20px;}
+		.region {text-align: left;}
 	}
 	// margin-left: 130px;
 	height: 282px; // spans the height of the background image.
@@ -106,7 +109,7 @@ div {
 	.group {
 		@include flexbox;
 		@include align-items(flex-end);
-
+		@include flex-wrap(wrap);
 	}
 }
 h1 {
@@ -174,5 +177,4 @@ a:active {
 		}
 	}
 }
-// @import "socicon/socicon";
-// @import "helpers/wireframe";
+@import "helpers/wireframe";
