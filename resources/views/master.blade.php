@@ -6,8 +6,11 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="{{{ $data['head']['description'] or '' }}}">
 	<meta name="author" content="George Petridis">
+
+
 	<link rel="stylesheet" type="text/css" href="{{asset('css/screen.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 <script>
@@ -20,17 +23,18 @@
   ga('send', 'pageview');
 
 </script>
+<div id="doc">
 <div class="container" id="top-bar">
     <div class="group">
         <div class="region">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                <div class="block">
+            <div class="{{$localeCode}} block">
                 <div class="content">
                     <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
                         {{{ $properties['native'] }}}
                     </a>
                 </div>
-                </div>
+            </div>
             @endforeach
             <div class="block">
                 <!-- social__item linkedin -->
@@ -39,11 +43,18 @@
                 </div>
                 <!-- /social__item linkedin -->
             </div>
+            <div class="row">
+                <div class="switch">
+                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
+                    <label for="cmn-toggle-1"></label>
+                </div>
+            </div><!-- /row -->
         </div>
     </div>
 </div>
 <div id="page">
 @yield('content')
 </div>
+</div><!-- /#doc -->
 </body>
 </html>

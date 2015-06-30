@@ -1,27 +1,51 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900);
+/* /Fonts */
 
+/* Libraries */
 @import "compass";
 @import "helpers/mixins";
 @import "helpers/placeholders";
 @import "helpers/flex";
 @import "devicon/devicon";
 @import "devicon/devicon.colors";
+/* /Libraries */
 
+/* Variables */
 $blue: #0480ab;
+/* /Variables */
 
 html {
 	font-size: 67%;
+	@include box-sizing(border-box);
+    // -webkit-font-smoothing: antialiased;
+    // text-rendering: optimizeLegibility;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+html:lang(en) {
+	#top-bar {.block.en {display: none;}}
+}
+html:lang(fr) {
+	#top-bar {.block.fr {display: none;}}
 }
 body {
 	@extend %reset;
 	@include rem(font-size, 1.6rem);
-	font-family: "Helvetica";
-	// background: url(../images/bg-tech-white.jpg);
+	font-family: "Titillium Web";
 	line-height: 1.4;
-	color: lighten(black, 15%);
+	// color: lighten(black, 15%);
+	background: darken(white, 7%);
+	background: url(../images/pattern-gray.png);
+	/* Better Font Rendering =========== */
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4, p, ul {
 	@extend %reset;
-	font-weight: normal;
+	font-weight: 300;
 }
 ul {
 	@include rem(padding-left, 1.6rem);
@@ -31,120 +55,50 @@ a {
 }
 img {
 	vertical-align: middle;
+	max-width: 100%;
+	width: 100%;
+	height: auto;
 }
-div {
-	// padding: 5px;
-	// border: 1px solid gray;
-}
-.group {padding: 5px;}
-.region {padding: 5px;}
-.block {padding: 5px;}
+
+/* Grid Padding */
+.container {padding: 2px;}
+.group {padding: 20px;}
+.region {padding: 2px;}
+.block {padding: 2px;}
 .content {padding: 5px;}
-#top-bar {
-	max-width: 1100px;
+/* /Grid Padding */
+
+#doc {
+	max-width: 900px;
 	margin: 0 auto;
+}
+#top-bar {
 	.region {
 		@include flexbox;
 		@include align-items(center);
 	}
 }
 #page {
-	max-width: 1100px;
-	margin: 0 auto;
-	// @media(min-width: 500px) {padding: 10px;}
-	// @media(min-width: 800px) {padding: 40px;}
-	background: darken(white, 3%);
-	background: url(../images/pattern-paper.png);
+	background: darken(white, 0%);
 	@include box-shadow(1px 1px 5px gray);
+	// background: url(../images/pattern-paper.png);
 }
 #header {
 	.region {
-		background-color: rgba(255,255,255,0.6);
-		text-align: right;
+		margin-left: 130px;
 	}
 	.region:first-child {
 		@include flex(1 1 0);
 	}
-	@media(min-width: 450px) {
-		margin-left: 130px;
-		.group {margin-top: 20px;}
-		.region {text-align: left;}
-	}
-	// margin-left: 130px;
-	height: 282px; // spans the height of the background image.
+	background: url(../images/computer-front.jpg) no-repeat bottom left, 
+				url(../images/header-bg.jpg) repeat-x bottom;
 }
-#photo {
-	// padding: 0;
-	// .block {padding: 0;}
-	.content {
-		// @include transform(rotate(5deg));
-		padding: 0;		
-		border: 10px solid darken(white, 2%);
-		// @include border-radius(50%);
-		@include box-shadow(0 1px 1px gray);
 
-	}
-}
-#george {
-	height: 200px;
-}
-#page {
-	background: url(../images/computer-front.jpg) no-repeat, url(../images/header-bg.jpg) repeat-x;
-	.group, #portfolio .block {
-		// border-bottom: 1px solid lightgray;
-	}
-}
-#main {
-	> .group {
-		.region {
-			// border-bottom: 1px solid gray;
-		}
-		border-bottom: 1px solid lightgray;
-	}
-}
-#portfolio .block:last-child {
-	// border-bottom: none;
-}
-#footer {
-	.group {
-		@include flexbox;
-		@include align-items(flex-end);
-		@include flex-wrap(wrap);
-	}
-}
-h1 {
-	@include rem(font-size, 2.2rem);
-	// text-transform: uppercase;
-	letter-spacing: 1px;
-	// font-family: "Georgia";
-	color: $blue;
-	// text-align: right;
-}
-h2 {
-	@include rem(font-size, 1.2rem);
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-style: italic; 
-}
-h3 {
-	@include rem(font-size, 2rem);
-	font-style: italic;
-	font-family: "Georgia";
-}
-h4 {
-	@include rem(font-size, 1.8rem);
-	@include text-shadow(0 1px 0 gray);
-	margin-top: 0.3rem;
-}
-$link: $blue;
-a, a:link, a:visited {
-	color: $link;
-}
-a:hover {
-	color: lighten($link, 15%);
-}
-a:active {
-	color: darken($link, 15%);
+/* Main */
+#profile {}
+#services {
+	background: url(../images/pattern-zig.png) repeat-x top,
+				url(../images/pattern-zig.png) repeat-x bottom;	
 }
 #technical {
 	.region:last-child {
@@ -156,6 +110,53 @@ a:active {
 		}
 	}
 }
+#portfolio {}
+#education {}
+/* /Main */
+
+#footer {
+	.group {
+		@include flexbox;
+		@include align-items(flex-end);
+		@include flex-wrap(wrap);
+	}
+}
+h1 {
+	@include rem(font-size, 2.4rem);
+	font-family: 'Helvetica', sans-serif;
+	letter-spacing: 1px;
+	color: $blue;
+	font-weight: bold;
+}
+h2 {
+	@include rem(font-size, 1.2rem);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-style: italic; 
+}
+h3 {
+	@include rem(font-size, 2rem);
+	font-style: italic;
+}
+h4 {
+	@include rem(font-size, 1.8rem);
+	@include text-shadow(0 1px 0px white);
+	font-weight: 600;
+	margin-top: 0.3rem;
+}
+
+/* Links */
+$link: $blue;
+a, a:link, a:visited {
+	color: $link;
+}
+a:hover {
+	color: lighten($link, 15%);
+}
+a:active {
+	color: darken($link, 15%);
+}
+/* /Links */
 
 @media(min-width: 600px) {
 	.group {
@@ -174,7 +175,15 @@ a:active {
 	#services {
 		.region:last-child {
 			@include flexbox;
+			.block {
+				@include flex(1 0 0);
+			}
 		}
 	}
 }
-@import "helpers/wireframe";
+@media print {
+	#top-bar {display: none;}
+}
+
+// @import "helpers/wireframe";
+

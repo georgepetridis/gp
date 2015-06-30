@@ -1,7 +1,23 @@
-.container {border: 1px solid coral;}
-.group {border: 1px solid green;}
-.region {border: 1px solid red;}
-.block {border: 1px solid black;}
-.content {border: 1px solid cyan;}
-h1, h2, h3, p, li {border: 1px dotted gray;}
-a {border: 1px dotted blue;}
+// .container {border: 1px solid coral;}
+// .group {border: 1px solid green;}
+// .region {border: 1px solid red;}
+// .block {border: 1px solid black;}
+// .content {border: 1px solid cyan;}
+// h1, h2, h3, h4, p, li {border: 1px dotted gray;}
+// a {border: 1px dotted antiquewhite;}
+
+// .container 				{background: darken(white, 30%); opacity: 0.9;}
+// .group 					{background: darken(white, 25%); opacity: 0.9;}
+// .region 				{background: darken(white, 20%);}
+// .block 					{background: darken(white, 15%);}
+// .content 				{background: darken(white, 10%);}
+// h1, h2, h3, h4, p, li 	{background: darken(white,  5%);}
+// a 						{background: darken(white,  0%);}
+
+.container 				{background: rgba(200,200,200,0.4);}
+.group 					{background: rgba(200,200,200,0.5);}
+.region 				{background: rgba(160,160,160,1.0);}
+.block 					{background: rgba(230,230,230,1.0);}
+.content 				{background: rgba(200,200,200,1.0);}
+h1, h2, h3, h4, p, li 	{background: rgba(245,245,245,1.0);}
+a 						{background: rgba(255,255,255,1.0);}

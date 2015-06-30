@@ -1,3 +1,7 @@
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900);
+/* /Fonts */
+/* Libraries */
 /* Makes it possible to use the useful rem and have a pixel size fallback. */
 body, h1, h2, h3, h4, p, ul {
   margin: 0;
@@ -1046,20 +1050,41 @@ body, h1, h2, h3, h4, p, ul {
   color: #68b604;
 }
 
+/* /Libraries */
+/* Variables */
+/* /Variables */
 html {
   font-size: 67%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html:lang(en) #top-bar .block.en {
+  display: none;
+}
+
+html:lang(fr) #top-bar .block.fr {
+  display: none;
 }
 
 body {
   font-size: 16px;
   font-size: 1.6rem;
-  font-family: "Helvetica";
+  font-family: "Titillium Web";
   line-height: 1.4;
-  color: #262626;
+  background: #ededed;
+  background: url(../images/pattern-gray.png);
+  /* Better Font Rendering =========== */
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, p, ul {
-  font-weight: normal;
+  font-weight: 300;
 }
 
 ul {
@@ -1073,28 +1098,38 @@ a {
 
 img {
   vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* Grid Padding */
+.container {
+  padding: 2px;
 }
 
 .group {
-  padding: 5px;
+  padding: 20px;
 }
 
 .region {
-  padding: 5px;
+  padding: 2px;
 }
 
 .block {
-  padding: 5px;
+  padding: 2px;
 }
 
 .content {
   padding: 5px;
 }
 
-#top-bar {
-  max-width: 1100px;
+/* /Grid Padding */
+#doc {
+  max-width: 900px;
   margin: 0 auto;
 }
+
 #top-bar .region {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1109,21 +1144,17 @@ img {
 }
 
 #page {
-  max-width: 1100px;
-  margin: 0 auto;
-  background: #f7f7f7;
-  background: url(../images/pattern-paper.png);
+  background: white;
   -moz-box-shadow: 1px 1px 5px gray;
   -webkit-box-shadow: 1px 1px 5px gray;
   box-shadow: 1px 1px 5px gray;
 }
 
 #header {
-  height: 282px;
+  background: url(../images/computer-front.jpg) no-repeat bottom left, url(../images/header-bg.jpg) repeat-x bottom;
 }
 #header .region {
-  background-color: rgba(255, 255, 255, 0.6);
-  text-align: right;
+  margin-left: 130px;
 }
 #header .region:first-child {
   -webkit-box-flex: 1;
@@ -1133,94 +1164,10 @@ img {
   -ms-flex: 1 1 0;
   flex: 1 1 0;
 }
-@media (min-width: 450px) {
-  #header {
-    margin-left: 130px;
-  }
-  #header .group {
-    margin-top: 20px;
-  }
-  #header .region {
-    text-align: left;
-  }
-}
 
-#photo .content {
-  padding: 0;
-  border: 10px solid #fafafa;
-  -moz-box-shadow: 0 1px 1px gray;
-  -webkit-box-shadow: 0 1px 1px gray;
-  box-shadow: 0 1px 1px gray;
-}
-
-#george {
-  height: 200px;
-}
-
-#page {
-  background: url(../images/computer-front.jpg) no-repeat, url(../images/header-bg.jpg) repeat-x;
-}
-
-#main > .group {
-  border-bottom: 1px solid lightgray;
-}
-
-#footer .group {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  -webkit-align-items: flex-end;
-  -moz-align-items: flex-end;
-  align-items: flex-end;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-h1 {
-  font-size: 22px;
-  font-size: 2.2rem;
-  letter-spacing: 1px;
-  color: #0480ab;
-}
-
-h2 {
-  font-size: 12px;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-style: italic;
-}
-
-h3 {
-  font-size: 20px;
-  font-size: 2rem;
-  font-style: italic;
-  font-family: "Georgia";
-}
-
-h4 {
-  font-size: 18px;
-  font-size: 1.8rem;
-  text-shadow: 0 1px 0 gray;
-  margin-top: 0.3rem;
-}
-
-a, a:link, a:visited {
-  color: #0480ab;
-}
-
-a:hover {
-  color: #06b8f6;
-}
-
-a:active {
-  color: #024860;
+/* Main */
+#services {
+  background: url(../images/pattern-zig.png) repeat-x top, url(../images/pattern-zig.png) repeat-x bottom;
 }
 
 #technical .region:last-child .block {
@@ -1242,6 +1189,69 @@ a:active {
   display: none;
 }
 
+/* /Main */
+#footer .group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: 1px;
+  color: #0480ab;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+h4 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  text-shadow: 0 1px 0px white;
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+/* Links */
+a, a:link, a:visited {
+  color: #0480ab;
+}
+
+a:hover {
+  color: #06b8f6;
+}
+
+a:active {
+  color: #024860;
+}
+
+/* /Links */
 @media (min-width: 600px) {
   .group {
     display: -webkit-box;
@@ -1270,31 +1280,17 @@ a:active {
     display: -ms-flexbox;
     display: flex;
   }
+  #services .region:last-child .block {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -moz-box-flex: 1;
+    -moz-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0;
+  }
 }
-.container {
-  border: 1px solid coral;
-}
-
-.group {
-  border: 1px solid green;
-}
-
-.region {
-  border: 1px solid red;
-}
-
-.block {
-  border: 1px solid black;
-}
-
-.content {
-  border: 1px solid cyan;
-}
-
-h1, h2, h3, p, li {
-  border: 1px dotted gray;
-}
-
-a {
-  border: 1px dotted blue;
+@media print {
+  #top-bar {
+    display: none;
+  }
 }

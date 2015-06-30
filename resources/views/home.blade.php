@@ -162,6 +162,9 @@
                             <li>Database</li>
                         </ul>
                     </div>
+                    <div class="content">
+                        <img src="images/screenshot-loeys-dietz.png">
+                    </div>
                 </div>
                 <div class="block">
                     <div class="content">
@@ -179,6 +182,9 @@
                             <li>Bilingual</li>
                             <li>Clean Mobile Layout</li>
                         </ul>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-stergios.png">
                     </div>
                 </div>
                 <div class="block">
@@ -198,6 +204,9 @@
                             <li>Mobile Friendly</li>
                         </ul>
                     </div>
+                    <div class="content">
+                        <img src="images/screenshot-roxysdesigns.png">
+                    </div>
                 </div>
 
                 <div class="block">
@@ -209,6 +218,9 @@
                     </div>
                     <div class="content">
                         <p>Personal project involving responsive mobile first web design and a custom grid system that I developed.</p>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-coolbasslines.png">
                     </div>
                 </div>
 
@@ -254,7 +266,6 @@
             <div class="region" id="photo">
                 <div class="block">
                     <div class="content">
-                        <!-- <img id="clip" src="images/paperclip.png"> -->
                         <img id="george" src="images/george-petridis-web-developer.jpg">
                     </div>
                 </div>
@@ -262,7 +273,6 @@
             <div class="region">
                 <div class="block">
                     <div class="content">
-                        <!-- <img src="images/george-petridis-web-developer-montreal.jpg"> -->
                         <p>&copy; George Petridis 2014 - <?php echo date('Y'); ?></p>
                         <p>{{{ "Updated on: ".date("F d Y", filemtime(__FILE__)) }}}</p>
                     </div>
