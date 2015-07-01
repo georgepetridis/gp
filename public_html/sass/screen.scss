@@ -69,7 +69,7 @@ img {
 /* /Grid Padding */
 
 #doc {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 #top-bar {
@@ -100,9 +100,11 @@ img {
 		position: relative;
 		@include flex(1 1 0);
 		height: 250px;
+		@media(min-width: 600px) {height: 180px;}
 		.block:first-child { /* Name */
 			position: absolute;
 			top: 80px;
+			@media(min-width: 600px) {top: 40px;}
 			left: 50px;
 		}
 		.block:last-child { /* Job Description */
@@ -215,4 +217,3 @@ $link: $blue;
 @import "buttons/btn-1";
 
 // @import "helpers/wireframe";
-

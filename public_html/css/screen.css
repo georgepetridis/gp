@@ -1126,7 +1126,7 @@ img {
 
 /* /Grid Padding */
 #doc {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -1187,11 +1187,21 @@ img {
   flex: 1 1 0;
   height: 250px;
 }
+@media (min-width: 600px) {
+  #header .region:first-child {
+    height: 180px;
+  }
+}
 #header .region:first-child .block:first-child {
   /* Name */
   position: absolute;
   top: 80px;
   left: 50px;
+}
+@media (min-width: 600px) {
+  #header .region:first-child .block:first-child {
+    top: 40px;
+  }
 }
 #header .region:first-child .block:last-child {
   /* Job Description */
