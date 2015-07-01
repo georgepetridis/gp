@@ -277,9 +277,16 @@
                         <p>{{{ "Updated on: ".date("F d Y", filemtime(__FILE__)) }}}</p>
                     </div>
                 </div>
+                <div class="block">
+                    <!-- social__item linkedin -->
+                    <div class="social__item content">
+                            <a target="_blank" href="https://ca.linkedin.com/in/georgepetridis"><img src="images/linkedIn-logo-32x32.png"></a>
+                    </div>
+                    <!-- /social__item linkedin -->
+                </div>
             </div>
-
         </div>
+
     </footer>
 
 

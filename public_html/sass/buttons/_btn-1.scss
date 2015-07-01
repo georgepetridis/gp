@@ -1,0 +1,15 @@
+$btn-1: $blue;
+.btn-1 {
+  background: $btn-1;
+  @include background-image(linear-gradient(top, lighten($btn-1, 35%), $btn-1));
+  @include border-radius(3px);
+  @include box-shadow(gray 0 1px 1px, gray 0 1px 1px);
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+$btn-1-hover: lighten($btn-1, 5%);
+.btn-1:hover {
+  background: $btn-1-hover;
+  @include background-image(linear-gradient(top, lighten($btn-1-hover, 35%), $btn-1-hover));
+}

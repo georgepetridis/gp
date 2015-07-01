@@ -12,7 +12,7 @@
 /* /Libraries */
 
 /* Variables */
-$blue: #0480ab;
+$blue: #157ba2;
 /* /Variables */
 
 html {
@@ -73,10 +73,18 @@ img {
 	margin: 0 auto;
 }
 #top-bar {
+	padding: 0;
+	.group {padding: 5px;}
 	.region {
+		padding: 0;
 		@include flexbox;
 		@include align-items(center);
+		@include justify-content(space-around);
 	}
+	.block {
+		padding: 0;
+	}
+	.content {padding: 0;}
 }
 #page {
 	background: darken(white, 0%);
@@ -84,11 +92,26 @@ img {
 	// background: url(../images/pattern-paper.png);
 }
 #header {
+	.group {padding: 0;}
 	.region {
-		margin-left: 130px;
+		margin-left: 80px;
 	}
-	.region:first-child {
+	.region:first-child { /* Name and Job Description */
+		position: relative;
 		@include flex(1 1 0);
+		height: 250px;
+		.block:first-child { /* Name */
+			position: absolute;
+			top: 80px;
+			left: 50px;
+		}
+		.block:last-child { /* Job Description */
+			position: absolute;
+			bottom: 0;
+		}
+	}
+	.region:last-child {
+		display: none;
 	}
 	background: url(../images/computer-front.jpg) no-repeat bottom left, 
 				url(../images/header-bg.jpg) repeat-x bottom;
@@ -122,14 +145,17 @@ img {
 	}
 }
 h1 {
-	@include rem(font-size, 2.4rem);
-	font-family: 'Helvetica', sans-serif;
+	@include rem(font-size, 1.8rem);
+	@media(min-width: 360px) {
+		@include rem(font-size, 2.4rem);
+	}
+	font-family: 'Helvetica Neue', 'Helvetica', 'Liberation Sans', sans-serif;
 	letter-spacing: 1px;
 	color: $blue;
 	font-weight: bold;
 }
 h2 {
-	@include rem(font-size, 1.2rem);
+	@include rem(font-size, 1.8rem);
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-style: italic; 
@@ -145,16 +171,18 @@ h4 {
 	margin-top: 0.3rem;
 }
 
-/* Links */
+/* Page Links */
 $link: $blue;
-a, a:link, a:visited {
-	color: $link;
-}
-a:hover {
-	color: lighten($link, 15%);
-}
-a:active {
-	color: darken($link, 15%);
+#page {
+	a, a:link, a:visited {
+		color: $link;
+	}
+	a:hover {
+		color: lighten($link, 15%);
+	}
+	a:active {
+		color: darken($link, 15%);
+	}
 }
 /* /Links */
 
@@ -184,6 +212,7 @@ a:active {
 @media print {
 	#top-bar {display: none;}
 }
+@import "buttons/btn-1";
 
 // @import "helpers/wireframe";
 

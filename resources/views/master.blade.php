@@ -30,25 +30,23 @@
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
             <div class="{{$localeCode}} block">
                 <div class="content">
-                    <a rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
+                    <a class="btn-1" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
                         {{{ $properties['native'] }}}
                     </a>
                 </div>
             </div>
             @endforeach
             <div class="block">
-                <!-- social__item linkedin -->
-                <div class="social__item content">
-                        <a target="_blank" href="https://ca.linkedin.com/in/georgepetridis"><img src="images/linkedIn-logo-32x32.png"></a>
+                <div class="content">
+                    <a class="btn-1" href="">Call Me</a>
                 </div>
-                <!-- /social__item linkedin -->
             </div>
-            <div class="row">
-                <div class="switch">
-                    <input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round" type="checkbox">
-                    <label for="cmn-toggle-1"></label>
+            <div class="block">
+                <div class="content">
+                    <a class="btn-1" href="">Email Me</a>
                 </div>
-            </div><!-- /row -->
+            </div>
+
         </div>
     </div>
 </div>
