@@ -7,6 +7,7 @@ $btn-1: $blue;
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
+  white-space: nowrap;
 }
 $btn-1-hover: lighten($btn-1, 5%);
 .btn-1:hover {

@@ -1352,6 +1352,7 @@ h4 {
   color: #ffffff;
   padding: 10px 20px;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .btn-1:hover {
