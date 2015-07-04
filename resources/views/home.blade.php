@@ -2,7 +2,6 @@
 
 @section('content')
 
-
     
     <header class="container" id="header">
 
@@ -39,8 +38,21 @@
 
     </header><!-- /.container -->
 
+    <nav class="container" id="nav">
+        <div class="group">
+            <div class="region">
+                <div class="block"><div class="content arrow_box"><a href="#profile">Profile</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#services">Services</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#portfolio">Porfolio</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#education">Education</a></div></div>
+                <!-- <div class="bounce"><i class="fa fa-angle-double-down"></i></div> -->
+            </div>
+        </div>
+    </nav>
+
     <main class="container" id="main">
 
+        <a name="profile"></a>
         <div class="group" id="profile">
 
             <div class="region">
@@ -60,12 +72,12 @@
             </div>
 
         </div>
-
+        <a name="services"></a>
         <div class="group" id="services">
 
             <div class="region">
-                <div  class="block">
-                    <div  class="content">
+                <div class="block">
+                    <div class="content">
                         <h3>Services</h3>                                   
                     </div>
                 </div>
@@ -132,6 +144,7 @@
 
         </div>
 
+        <a name="portfolio"></a>
         <div class="group" id="portfolio">
 
             <div class="region">
@@ -228,6 +241,7 @@
 
         </div>
 
+        <a name="education"></a>
         <div class="group" id="education">
 
             <div class="region">

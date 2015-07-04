@@ -1,13 +1,14 @@
-$btn-1: $blue;
+$btn-1: darken(white, 10%);
 .btn-1 {
   background: $btn-1;
   @include background-image(linear-gradient(top, lighten($btn-1, 35%), $btn-1));
-  @include border-radius(3px);
-  @include box-shadow(gray 0 1px 1px, gray 0 1px 1px);
-  color: #ffffff;
+  // @include border-radius(3px);
+  $box-shadow-color: lightgray;
+  @include box-shadow($box-shadow-color 0 1px 1px, $box-shadow-color 0 1px 1px);
+  color: $blue;
   padding: 10px 20px;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: nowrap; // Required to render correctly on Android browser.
 }
 $btn-1-hover: lighten($btn-1, 5%);
 .btn-1:hover {

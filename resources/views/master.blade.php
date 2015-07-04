@@ -10,7 +10,8 @@
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/screen.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
 </head>
 <body>
 <script>
@@ -22,6 +23,20 @@
   ga('create', 'UA-64569050-1', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+    jQuery(document).ready(function($) {
+
+        $('.btn-1').animate();
+
+
+
+// $('div').borderize();
+// $('div').borderize({color: 'red'});
+
+
+
+    });
 </script>
 <div id="doc">
 <div class="container" id="top-bar">
@@ -36,17 +51,16 @@
                 </div>
             </div>
             @endforeach
-            <div class="block">
+            <div class="block" id="tel">
                 <div class="content">
-                    <a class="btn-1" href="">Call Me</a>
+                    <a class="btn-1" href="tel:15149754339">Call Me</a>
                 </div>
             </div>
-            <div class="block">
+            <div class="block" id="email">
                 <div class="content">
-                    <a class="btn-1" href="">Email Me</a>
+                    <a class="btn-1" href="mailto:george@georgepetridis.com">Email Me</a>
                 </div>
             </div>
-
         </div>
     </div>
 </div>

@@ -35,12 +35,9 @@ body {
 	@include rem(font-size, 1.6rem);
 	font-family: "Titillium Web";
 	line-height: 1.4;
-	// color: lighten(black, 15%);
 	background: darken(white, 7%);
 	background: url(../images/pattern-gray.png);
 	/* Better Font Rendering =========== */
-	// -webkit-font-smoothing: antialiased;
-	// -moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4, p, ul {
@@ -53,6 +50,20 @@ ul {
 a {
 	display: inline-block;
 }
+/* Page Links */
+$link: $blue;
+#page {
+	a, a:link, a:visited {
+		color: $link;
+	}
+	a:hover {
+		color: lighten($link, 15%);
+	}
+	a:active {
+		color: darken($link, 15%);
+	}
+}
+/* /Links */
 img {
 	vertical-align: middle;
 	max-width: 100%;
@@ -74,7 +85,7 @@ img {
 }
 #top-bar {
 	padding: 0;
-	.group {padding: 5px;}
+	.group {padding: 0 0 5px 0;}
 	.region {
 		padding: 0;
 		@include flexbox;
@@ -86,6 +97,9 @@ img {
 	}
 	.content {padding: 0;}
 }
+@media(min-width: 600px) {
+	#tel, #email {display: none;}
+}
 #page {
 	background: darken(white, 0%);
 	@include box-shadow(1px 1px 5px gray);
@@ -93,8 +107,8 @@ img {
 }
 #header {
 	.group {padding: 0;}
-	.region {
-		margin-left: 80px;
+	.region:first-child {
+		margin-left: 90px;
 	}
 	.region:first-child { /* Name and Job Description */
 		position: relative;
@@ -104,7 +118,7 @@ img {
 		.block:first-child { /* Name */
 			position: absolute;
 			top: 80px;
-			@media(min-width: 600px) {top: 40px;}
+			@media(min-width: 600px) {top: 90px;}
 			left: 50px;
 		}
 		.block:last-child { /* Job Description */
@@ -114,11 +128,39 @@ img {
 	}
 	.region:last-child {
 		display: none;
+		@media(min-width: 600px) {display: block;}
 	}
 	background: url(../images/computer-front.jpg) no-repeat bottom left, 
 				url(../images/header-bg.jpg) repeat-x bottom;
 }
+#nav {
+	border-top: 10px solid darken(#e9e9eb, 0%);
+  	@include background-image(linear-gradient(top, lighten($blue, 35%), $blue));
 
+	padding: 0;
+	.group {padding: 0;}
+	.region {
+		padding: 0;
+		@include flexbox;
+		// @include justify-content()
+	}
+	.block {
+		padding: 0;
+		@include flex(25%);
+		// border: 1px solid black;
+	}
+	.content {
+		padding: 0;
+		text-align: center;
+		// background: lightgray;
+		a {
+			text-decoration: none;
+			color: white;
+			height: 50px;
+			line-height: 50px; /* Centers the text. */
+		}
+	}
+}
 /* Main */
 #profile {}
 #services {
@@ -173,26 +215,20 @@ h4 {
 	margin-top: 0.3rem;
 }
 
-/* Page Links */
-$link: $blue;
-#page {
-	a, a:link, a:visited {
-		color: $link;
-	}
-	a:hover {
-		color: lighten($link, 15%);
-	}
-	a:active {
-		color: darken($link, 15%);
-	}
-}
-/* /Links */
+
 
 @media(min-width: 600px) {
-	.group {
-		@include flexbox;
-		.region:first-child {
-			min-width: 130px;
+	#header {
+		.group {
+			@include flexbox;
+		}
+	}
+	#main {
+		.group {
+			@include flexbox;
+			.region:first-child {
+				min-width: 150px;
+			}
 		}
 	}
 	#header {
@@ -217,3 +253,34 @@ $link: $blue;
 @import "buttons/btn-1";
 
 // @import "helpers/wireframe";
+
+
+.arrow_box {
+	position: relative;
+  	@include background-image(linear-gradient(top, lighten($blue, 15%), $blue));
+
+	border-bottom: 3px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	// border-color: rgba(21, 123, 162, 0);
+	border-top-color: #157ba2;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.arrow_box:before {
+	// border-color: rgba(194, 225, 245, 0);
+	border-top-color: #a6e2fa;
+	border-width: 17px;
+	margin-left: -17px;
+}
