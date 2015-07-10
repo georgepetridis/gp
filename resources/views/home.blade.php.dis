@@ -1,0 +1,308 @@
+@extends('master')
+
+@section('content')
+
+    
+    <header class="container" id="header">
+
+        <div class="group">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h1>{{{ $name }}}</h1>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">       
+                        <h2>{{{ $data['header']['title'] }}}</h2>   
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <a href="mailto:george@georgepetridis.com">george@georgepetridis.com</a>
+                    </div><!-- /.content -->
+                </div><!-- /.block -->
+                <div class="block">
+                    <div class="content">
+                        <p>(514) 975-4339</p>               
+                    </div><!-- /.content -->
+                </div><!-- /.block -->
+            </div><!-- /.region -->
+
+
+        </div><!-- /.group -->
+
+    </header><!-- /.container -->
+
+    <nav class="container" id="nav">
+        <div class="group">
+            <div class="region">
+                <div class="block"><div class="content arrow_box"><a href="#profile">Profile</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#services">Services</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#portfolio">Porfolio</a></div></div>
+                <div class="block"><div class="content arrow_box"><a href="#education">Education</a></div></div>
+                <!-- <div class="bounce"><i class="fa fa-angle-double-down"></i></div> -->
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" id="main">
+
+        <a name="profile"></a>
+        <div class="group" id="profile">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h3>Profile</h3>                
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <p>{{ $data['profile']['content'] }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a name="services"></a>
+        <div class="group" id="services">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h3>Services</h3>                                   
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['services']['1']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ $data['services']['1']['content'] }}</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['services']['2']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ $data['services']['2']['content'] }}</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['services']['3']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <p>{{ $data['services']['3']['content'] }}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="group" id="technical">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h3>Technical</h3>              
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content"><i class="devicon-javascript-plain"></i><p>JavaScript</p></div>
+                    <div class="content"><i class="devicon-html5-plain-wordmark colored"></i><p>HTML5</p></div>
+                    <div class="content"><i class="devicon-php-plain colored"></i><p>PHP</p></div>
+                    <div class="content"><i class="devicon-css3-plain-wordmark colored"></i><p>CSS3</p></div>
+                    <div class="content"><i class="devicon-sass-plain colored"></i><p>Sass</p></div>
+                    <div class="content"><i class="devicon-jquery-plain-wordmark colored"></i><p>JQuery</p></div>
+                    <div class="content"><i class="devicon-drupal-plain-wordmark colored"></i><p>Drupal</p></div>
+                    <div class="content"><i class="devicon-laravel-plain-wordmark colored"></i><p>Laravel</p></div>
+                    <div class="content"><i class="devicon-mysql-plain-wordmark colored"></i><p>MySQL</p></div>
+                    <div class="content"><i class="devicon-git-plain-wordmark colored"></i><p>GIT</p></div>
+                    <div class="content"><i class="devicon-wordpress-plain-wordmark colored"></i><p>Wordpress</p></div>
+                    <div class="content"><i class="devicon-apache-plain-wordmark colored"></i><p>Apache</p></div>
+                    <div class="content"><i class="devicon-codeigniter-plain-wordmark colored"></i><p>CodeIgniter</p></div>
+                    <div class="content"><i class="devicon-gulp-plain colored"></i><p>Gulp</p></div>
+                    <div class="content"><i class="devicon-nodejs-plain-wordmark colored"></i><p>Node.js</p></div>
+                </div>
+            </div>
+
+        </div>
+
+        <a name="portfolio"></a>
+        <div class="group" id="portfolio">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h3>Portfolio</h3>              
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['portfolio']['1']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <a href="http://loeysdietzcanada.org" target="blank">loeysdietzcanada.org</a>
+                    </div>
+                    <div class="content">
+                        <p>{{ $data['portfolio']['1']['summary'] }}</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Drupal CMS</li>
+                            <li>Newsletters</li>
+                            <li>Responsive Design</li>
+                            <li>Social Media</li>
+                            <li>Database</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-loeys-dietz.png">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['portfolio']['2']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <a href="http://stergios.ca" target="blank">stergios.ca</a>
+                    </div>
+                    <div class="content">
+                        <p><i>Project is currently under development.</i> Stergios is a landscaping and snow removal company requiring a simple fresh website that will showcase the companies services.</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>CMS</li>
+                            <li>Bilingual</li>
+                            <li>Clean Mobile Layout</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-stergios.png">
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['portfolio']['3']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <a href="http://roxysdesigns.ca" target="blank">roxysdesigns.ca</a>
+                    </div>
+                    <div class="content">
+                        <p>Sucessfully analyzed the client's need for an online profile for her business. Did everything from organizing meetings, content editing and a custom web design that suited the client's taste.</p>
+                    </div>
+                    <div class="content">
+                        <ul>
+                            <li>Laravel Framework</li>
+                            <li>Bilingual</li>
+                            <li>Mobile Friendly</li>
+                        </ul>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-roxysdesigns.png">
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="content">
+                        <h4>{{ $data['portfolio']['4']['title'] }}</h4>
+                    </div>
+                    <div class="content">
+                        <a href="http://coolbasslines.com" target="blank">coolbasslines.com</a>
+                    </div>
+                    <div class="content">
+                        <p>Personal project involving responsive mobile first web design and a custom grid system that I developed.</p>
+                    </div>
+                    <div class="content">
+                        <img src="images/screenshot-coolbasslines.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <a name="education"></a>
+        <div class="group" id="education">
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h3>Education</h3>              
+                    </div>
+                </div>
+            </div>
+
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <h4>Concordia University</h4>
+                    </div>
+                    <div class="content">
+                        <p>Web Programming Diploma</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="content">
+                        <h4>McGill University</h4>
+                    </div>
+                    <div class="content">
+                        <p>Bachelor of Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="container" id="footer">
+        <div class="group">
+<!--             <div class="region" id="photo">
+                <div class="block">
+                    <div class="content">
+                        <img id="george" src="images/george-petridis-web-developer.jpg">
+                    </div>
+                </div>
+            </div> -->
+            <div class="region">
+                <div class="block">
+                    <div class="content">
+                        <p>&copy; George Petridis 2014 - <?php echo date('Y'); ?></p>
+                        <p>{{{ "Updated on: ".date("F d Y", filemtime(__FILE__)) }}}</p>
+                    </div>
+                </div>
+                <div class="block">
+                    <!-- social__item linkedin -->
+                    <div class="social__item content">
+                            <a target="_blank" href="https://ca.linkedin.com/in/georgepetridis"><img src="images/linkedIn-logo-32x32.png"></a>
+                    </div>
+                    <!-- /social__item linkedin -->
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+@endsection

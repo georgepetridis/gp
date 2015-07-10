@@ -11,7 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('css/screen.css')}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/main.js')}}"></script>
+    <script src="{{asset('js/modernizr.custom.js')}}"></script>
+    <script src="{{asset('js/bigtext.js')}}"></script>
+
+
+
 </head>
 <body>
 <script>
@@ -24,21 +28,8 @@
   ga('send', 'pageview');
 
 </script>
-<script>
-    jQuery(document).ready(function($) {
 
-        $('.btn-1').animate();
-
-
-
-// $('div').borderize();
-// $('div').borderize({color: 'red'});
-
-
-
-    });
-</script>
-<div id="doc">
+<!-- <div id="doc">
 <div class="container" id="top-bar">
     <div class="group">
         <div class="region">
@@ -67,6 +58,32 @@
 <div id="page">
 @yield('content')
 </div>
-</div><!-- /#doc -->
+</div> -->
+
+@yield('content')
 </body>
+    <script src="{{asset('js/classie.js')}}"></script>
+    <script src="{{asset('js/borderMenu.js')}}"></script>
+<script type="text/javascript">
+    
+$(document).ready(function(){
+
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing');
+    });
+
+
+    $('#bigtext').bigtext();
+
+});
+
+</script>
+
 </html>
