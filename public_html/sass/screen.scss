@@ -24,6 +24,10 @@ html {
 	font-size: 67%;
 	@include box-sizing(border-box);
 	height: 100%;
+
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
