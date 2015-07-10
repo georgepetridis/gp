@@ -8,7 +8,7 @@
 	border-width: 0px;
 	border-style: solid;
 	border-color: #80858d;
-	background-color: rgba(0,0,0,0);
+	// background-color: rgba(0,0,0,0);
 	/* Determines the visibility of an element when it's back is turned. */
 	@include backface-visibility(hidden);
 	@include transition(border-width 0.3s, background-color 0.3s, height 0s 0.3s);

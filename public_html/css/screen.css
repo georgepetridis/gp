@@ -1508,7 +1508,6 @@ th {
   border-width: 0px;
   border-style: solid;
   border-color: #80858d;
-  background-color: transparent;
   /* Determines the visibility of an element when it's back is turned. */
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
