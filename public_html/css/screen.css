@@ -1825,7 +1825,7 @@ a {
 
 #about {
   min-height: 100%;
-  background: red;
+  background: url(../images/blue-tiles.jpg);
 }
 
 #projects {
