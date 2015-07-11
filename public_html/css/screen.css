@@ -1775,28 +1775,13 @@ a {
 }
 
 #header {
-  background-image: url(../images/mac-1920x1275.jpg);
-  background-position-x: 50%;
-  background-position-y: 0%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMjAwJSI+PHN0b3Agb2Zmc2V0PSIwLjUlIiBzdG9wLWNvbG9yPSIjNjY2NjY2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWExYTFhIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
   background-size: 100%;
+  background-image: -moz-radial-gradient(1px 1px, #666666 1px, #1a1a1a 200px);
+  background-image: -webkit-radial-gradient(1px 1px, #666666 1px, #1a1a1a 200px);
+  background-image: radial-gradient(1px 1px, #666666 1px, #1a1a1a 200px);
+  background-attachment: fixed;
   height: 100%;
-}
-@media (min-width: 360px) and (min-height: 640px) {
-  #header {
-    background-image: url(../images/mac-360x640.jpg);
-  }
-}
-@media (min-width: 760px) and (min-height: 1020px) {
-  #header {
-    background-image: url(../images/mac-768x1024.jpg);
-  }
-}
-@media (min-width: 1020px) and (min-height: 760px) {
-  #header {
-    background-image: url(../images/mac-1024x768.jpg);
-  }
 }
 
 #language {
