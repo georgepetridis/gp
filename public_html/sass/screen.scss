@@ -53,8 +53,24 @@ a {
 	height: 100%;
 }
 #header {
+	.group {
+		// background-image: url(../images/screen.png);
+		// background-repeat: no-repeat;
+		// padding: 30px;
+		// height: 500px;
+		// background-size: 100%;
+
+	}
+	.region {
+		min-height: 100%;
+		.group {
+			position: relative;
+			top: 50%;
+		}
+	}
 	// background-color: #ece7eb;
-	@include background-image(radial-gradient(1px 1px, lighten(black, 40%) 1px, lighten(black, 10%) 200px));
+	// @include background-image(radial-gradient(1px 1px, lighten(black, 40%) 1px, lighten(black, 10%) 200px));
+	@include background-image(linear-gradient(lighten(black, 40%), lighten(black, 10%)));
 	// background-image: url(../images/mac-320x480.jpg);
 	// background-image: url(../images/mac-1920x1275.jpg);
 	// background-image: url("../images/mac-768x1024.jpg");
@@ -67,7 +83,7 @@ a {
 	// background-position-x: 50%;
 	// background-position-y: 0%;
 	// background-repeat: no-repeat;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 	// background-size: 100%;
 	height: 100%;
 	// width: 100%;
@@ -109,13 +125,13 @@ a {
 	height: 100%;
 	background: orange;
 }
-#about {min-height: 100%; background: url(../images/blue-tiles.jpg);}
-#projects {min-height: 100%; background: white;}
-#skills {min-height: 100%; background: green;}
-#contact {min-height: 100%; background: blue;}
+#about {min-height: 100%; background: darken(white, 5%);}
+#projects {min-height: 100%; background: darken(white, 10%);}
+#skills {min-height: 100%; background: darken(white, 15%);}
+#contact {min-height: 100%; background: darken(white, 30%);}
 #footer {
 	min-height: 100%;
-	background: purple;
+	background: darken(white, 35%);
 }
 #bigtext {
 	color: white;
