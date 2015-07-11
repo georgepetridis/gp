@@ -58,8 +58,8 @@ a {
 	background-image: url(../images/mac-1920x1275.jpg);
 	// background-image: url("../images/mac-768x1024.jpg");
 	@media(min-width: 360px) and (min-height: 640px) {background-image: url(../images/mac-360x640.jpg);}
-	@media(min-width: 768px) and (min-height: 1024px) {background-image: url(../images/mac-768x1024.jpg);}
-	@media(min-width: 1024px) and (min-height: 768px) {background-image: url(../images/mac-1024x768.jpg);}
+	@media(min-width: 760px) and (min-height: 1020px) {background-image: url(../images/mac-768x1024.jpg);}
+	@media(min-width: 1020px) and (min-height: 760px) {background-image: url(../images/mac-1024x768.jpg);}
 
 	// background-position: left bottom;
 	// background-position: 75% 100%;
