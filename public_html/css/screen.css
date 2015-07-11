@@ -1775,10 +1775,10 @@ a {
 }
 
 #header {
-  background-image: url("../images/mac-768x1024.jpg");
+  background-image: url(../images/mac-1920x1275.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   height: 100%;
 }
 
