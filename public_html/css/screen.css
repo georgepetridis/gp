@@ -1776,7 +1776,7 @@ a {
 
 #header {
   background-color: #ece7eb;
-  background-image: url(../images/mac-768x1024.jpg);
+  background-image: url("../images/mac-768x1024.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
