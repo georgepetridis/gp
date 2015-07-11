@@ -1776,6 +1776,8 @@ a {
 
 #header {
   background-image: url(../images/mac-1920x1275.jpg);
+  background-position-x: 50%;
+  background-position-y: 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
