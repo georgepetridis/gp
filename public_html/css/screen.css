@@ -1776,7 +1776,10 @@ a {
 
 #header {
   background-image: url("../images/mac-768x1024.jpg");
+  background-position: left bottom;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   height: 100%;
 }
 
