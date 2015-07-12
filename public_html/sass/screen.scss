@@ -107,8 +107,7 @@ a {
 }
 #web {
 	font-family: 'Syncopate';
-	// @include rem(font-size, 1rem);
-	font-size: 1rem;
+	@include rem(font-size, 7.2rem);
 	font-weight: bold;
 	// background: red
 	line-height: 0.8;
@@ -117,19 +116,17 @@ a {
 }
 #dev {
 	font-family: 'Syncopate';
-	font-size: 1rem;
-	// @include rem(font-size, 3rem);
+	@include rem(font-size, 3rem);
 	// background: green;
 	// letter-spacing: 1px;
-	line-height: 1;
+	line-height: 0.8;
 }
 #name {
 	font-family: 'Ubuntu';
-	font-size: 1rem;
 	font-weight: 600;
 	// letter-spacing: 1px;
-	// @include rem(font-size, 3rem);
-	line-height: 1.2;
+	@include rem(font-size, 2.5rem);
+	line-height: 1.3;
 	// background: purple;
 }
 #main {
@@ -150,7 +147,12 @@ a {
 	width: 240px;
 	// min-width: 240px;
 	// @media(min-height: 600px) {max-width: 250px;}
-	@media(min-width: 800px) {width: 400px;}
+	@media(min-width: 800px) {
+		width: 400px;
+		#web {@include rem(font-size, 12rem);}
+		#dev {@include rem(font-size, 5rem);}
+		#name {@include rem(font-size, 4.2rem);}
+	}
 	// @media(min-width: 1600px) and (min-height: 700px) {max-width: 380px;}
 }
 #menu.open + #page {

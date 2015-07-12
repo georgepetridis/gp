@@ -26,13 +26,11 @@
         <div class="group">
 
             <div id="bigtext">
-                <span id="web">WEB</span>
-                <span id="dev">DEVELOPER</span>
-                <span id="name">GEORGE PETRIDIS</span>
+                <div id="web">WEB</div>
+                <div id="dev">DEVELOPER</div>
+                <div id="name">GEORGE PETRIDIS</div>
             </div>
-            <script type="text/javascript">
-                $('#bigtext').bigtext();
-            </script>
+
         </div>
     </div>
 
