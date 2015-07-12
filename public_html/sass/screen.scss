@@ -53,6 +53,9 @@ a {
 	height: 100%;
 }
 #header {
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
 	.group {
 		// background-image: url(../images/screen.png);
 		// background-repeat: no-repeat;
@@ -62,15 +65,15 @@ a {
 
 	}
 	.region {
-		min-height: 100%;
+		// min-height: 100%;
 		.group {
-			position: relative;
-			top: 50%;
+			// position: relative;
+			// top: 50%;
 		}
 	}
 	// background-color: #ece7eb;
 	// @include background-image(radial-gradient(1px 1px, lighten(black, 40%) 1px, lighten(black, 10%) 200px));
-	@include background-image(linear-gradient(lighten(black, 40%), lighten(black, 10%)));
+	// @include background-image(linear-gradient(lighten(black, 40%), lighten(black, 10%)));
 	// background-image: url(../images/mac-320x480.jpg);
 	// background-image: url(../images/mac-1920x1275.jpg);
 	// background-image: url("../images/mac-768x1024.jpg");
@@ -92,32 +95,32 @@ a {
 	}
 }
 #language {
-	display: inline-block;
-	position: absolute;
-	bottom: 100px;
-	right: 20px;
+	// display: inline-block;
+	// position: absolute;
+	// bottom: 100px;
+	// right: 20px;
 }
 .container {
-		padding: 20px 20px 20px 140px;
+		// padding: 20px 20px 20px 140px;
 
 }
 #web {
 	font-family: 'Syncopate';
-	@include rem(font-size, 1rem);
+	@include rem(font-size, 3rem);
 	font-weight: bold;
 	// background: red;
 	line-height: 0.8;
 }
 #dev {
 	font-family: 'Syncopate';
-	@include rem(font-size, 1rem);
+	@include rem(font-size, 3rem);
 	// background: green;
 	line-height: 1;
 }
 #name {
 	font-family: 'Ubuntu';
 	font-weight: 600;
-	@include rem(font-size, 1rem);
+	@include rem(font-size, 3rem);
 	line-height: 1.5;
 	// background: purple;
 }
@@ -134,8 +137,8 @@ a {
 	background: darken(white, 35%);
 }
 #bigtext {
-	color: white;
-	max-width: 200px;
+	// color: white;
+	// max-width: 200px;
 	// @media(min-height: 600px) {max-width: 250px;}
 	// @media(min-width: 1200px) {max-width: 300px;}
 	// @media(min-width: 1600px) and (min-height: 700px) {max-width: 380px;}

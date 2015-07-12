@@ -31,17 +31,7 @@
             </h1>
         </div>
     </div>
-    <div class="region" id="language">
-        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-        <div class="{{$localeCode}} block">
-            <div class="content">
-                <a class="btn-1" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                    {{{ $properties['native'] }}}
-                </a>
-            </div>
-        </div>
-        @endforeach   
-    </div>
+
 
 </header>
 
