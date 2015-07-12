@@ -56,7 +56,7 @@ a {
 	@include flexbox;
 	@include justify-content(center);
 	@include align-items(center);
-	padding: 0 20%;
+	// padding: 0 20%;
 	.group {
 		// background-image: url(../images/screen.png);
 		// background-repeat: no-repeat;
