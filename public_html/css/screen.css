@@ -1790,7 +1790,19 @@ a {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjQwcHgiIGN5PSIyNXB4IiByPSIzMDAlIj48c3RvcCBvZmZzZXQ9IjAuMzMzMzMlIiBzdG9wLWNvbG9yPSIjNTk1OTU5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -moz-radial-gradient(40px 25px, #595959 1px, #000000 300px);
+  background: -webkit-radial-gradient(40px 25px, #595959 1px, #000000 300px);
+  background: radial-gradient(40px 25px, #595959 1px, #000000 300px);
   height: 100%;
+}
+@media (min-width: 800px) {
+  #header {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjQwcHgiIGN5PSIyNXB4IiByPSI2MDAlIj48c3RvcCBvZmZzZXQ9IjAuMTY2NjclIiBzdG9wLWNvbG9yPSIjNTk1OTU5Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAwMDAwIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background: -moz-radial-gradient(40px 25px, #595959 1px, #000000 600px);
+    background: -webkit-radial-gradient(40px 25px, #595959 1px, #000000 600px);
+    background: radial-gradient(40px 25px, #595959 1px, #000000 600px);
+  }
 }
 
 #web {
@@ -1848,6 +1860,7 @@ a {
 }
 
 #bigtext {
+  color: white;
   width: 240px;
 }
 @media (min-width: 800px) {
@@ -1866,32 +1879,4 @@ a {
     font-size: 42px;
     font-size: 4.2rem;
   }
-}
-
-.container {
-  background: rgba(200, 200, 200, 0.4);
-}
-
-.group {
-  background: rgba(200, 200, 200, 0.5);
-}
-
-.region {
-  background: #a0a0a0;
-}
-
-.block {
-  background: #e6e6e6;
-}
-
-.content {
-  background: #c8c8c8;
-}
-
-h1, h2, h3, h4, p, li {
-  background: whitesmoke;
-}
-
-a {
-  background: white;
 }

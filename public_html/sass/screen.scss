@@ -56,6 +56,12 @@ a {
 	@include flexbox;
 	@include justify-content(center);
 	@include align-items(center);
+	@include background(radial-gradient(40px 25px, lighten(black, 35%) 1px, black 300px));
+	@media(min-width: 800px) {
+	@include background(radial-gradient(40px 25px, lighten(black, 35%) 1px, black 600px));
+
+	}
+	// background: lighten(black, 5%);
 	// padding: 0 20%;
 	.group {
 		// background-image: url(../images/screen.png);
@@ -143,7 +149,7 @@ a {
 }
 #bigtext {
 	// span {display: block;}
-	// color: white;
+	color: white;
 	width: 240px;
 	// min-width: 240px;
 	// @media(min-height: 600px) {max-width: 250px;}
@@ -179,4 +185,4 @@ a {
 		// color: black;
 	}
 }
-@import 'helpers/wireframe';
+// @import 'helpers/wireframe';
