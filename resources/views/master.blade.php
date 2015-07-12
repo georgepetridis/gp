@@ -13,7 +13,10 @@
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/modernizr.custom.js')}}"></script>
     <script src="{{asset('js/bigtext.js')}}"></script>
+    <script type="text/javascript">
+    $('#bigtext').bigtext();
 
+    </script>
 
 
 </head>
@@ -28,6 +31,7 @@
   ga('send', 'pageview');
 
 </script>
+
 
 <!-- <div id="doc">
 <div class="container" id="top-bar">
@@ -80,7 +84,6 @@ $(document).ready(function(){
     });
 
 
-    $('#bigtext').bigtext();
 
 });
 

@@ -30,6 +30,9 @@
                 <span id="dev">DEVELOPER</span>
                 <span id="name">GEORGE PETRIDIS</span>
             </div>
+            <script type="text/javascript">
+                $('#bigtext').bigtext();
+            </script>
         </div>
     </div>
 
