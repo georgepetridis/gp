@@ -108,7 +108,7 @@ a {
 #web {
 	font-family: 'Syncopate';
 	// @include rem(font-size, 1rem);
-	// font-size: 6px;
+	font-size: 1rem;
 	font-weight: bold;
 	// background: red
 	line-height: 0.8;
@@ -117,7 +117,7 @@ a {
 }
 #dev {
 	font-family: 'Syncopate';
-	// font-size: 6px;
+	font-size: 1rem;
 	// @include rem(font-size, 3rem);
 	// background: green;
 	// letter-spacing: 1px;
@@ -125,7 +125,7 @@ a {
 }
 #name {
 	font-family: 'Ubuntu';
-	// font-size: 6px;
+	font-size: 1rem;
 	font-weight: 600;
 	// letter-spacing: 1px;
 	// @include rem(font-size, 3rem);

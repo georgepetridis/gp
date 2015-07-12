@@ -1796,6 +1796,7 @@ a {
 
 #web {
   font-family: 'Syncopate';
+  font-size: 1rem;
   font-weight: bold;
   line-height: 0.8;
   padding-left: 3px;
@@ -1803,11 +1804,13 @@ a {
 
 #dev {
   font-family: 'Syncopate';
+  font-size: 1rem;
   line-height: 1;
 }
 
 #name {
   font-family: 'Ubuntu';
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.2;
 }
