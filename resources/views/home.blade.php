@@ -24,11 +24,12 @@
 <header id="header" class="">
     <div class="region container">
         <div class="group">
-            <h1 id="bigtext">
-                <div class="block" id="web">WEB</div>
-                <div class="block" id="dev">DEVELOPER</div>
-                <div class="block" id="name">GEORGE PETRIDIS</div>
-            </h1>
+
+            <div id="bigtext">
+                <span id="web">WEB</span>
+                <span id="dev">DEVELOPER</span>
+                <span id="name">GEORGE PETRIDIS</span>
+            </div>
         </div>
     </div>
 

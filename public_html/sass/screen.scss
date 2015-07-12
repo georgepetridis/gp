@@ -56,6 +56,7 @@ a {
 	@include flexbox;
 	@include justify-content(center);
 	@include align-items(center);
+	padding: 0 20%;
 	.group {
 		// background-image: url(../images/screen.png);
 		// background-repeat: no-repeat;
@@ -106,22 +107,29 @@ a {
 }
 #web {
 	font-family: 'Syncopate';
-	@include rem(font-size, 3rem);
+	// @include rem(font-size, 1rem);
+	// font-size: 6px;
 	font-weight: bold;
-	// background: red;
+	// background: red
 	line-height: 0.8;
+	padding-left: 3px;
+
 }
 #dev {
 	font-family: 'Syncopate';
-	@include rem(font-size, 3rem);
+	// font-size: 6px;
+	// @include rem(font-size, 3rem);
 	// background: green;
+	// letter-spacing: 1px;
 	line-height: 1;
 }
 #name {
 	font-family: 'Ubuntu';
+	// font-size: 6px;
 	font-weight: 600;
-	@include rem(font-size, 3rem);
-	line-height: 1.5;
+	// letter-spacing: 1px;
+	// @include rem(font-size, 3rem);
+	line-height: 1.2;
 	// background: purple;
 }
 #main {
@@ -138,9 +146,10 @@ a {
 }
 #bigtext {
 	// color: white;
-	// max-width: 200px;
+	width: 240px;
+	// min-width: 240px;
 	// @media(min-height: 600px) {max-width: 250px;}
-	// @media(min-width: 1200px) {max-width: 300px;}
+	@media(min-width: 800px) {width: 400px;}
 	// @media(min-width: 1600px) and (min-height: 700px) {max-width: 380px;}
 }
 #menu.open + #page {
@@ -167,4 +176,4 @@ a {
 		// color: black;
 	}
 }
-// @import 'helpers/wireframe';
+@import 'helpers/wireframe';

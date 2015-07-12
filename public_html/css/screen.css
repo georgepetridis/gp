@@ -1790,30 +1790,26 @@ a {
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
+  padding: 0 20%;
   height: 100%;
 }
 
 #web {
   font-family: 'Syncopate';
-  font-size: 30px;
-  font-size: 3rem;
   font-weight: bold;
   line-height: 0.8;
+  padding-left: 3px;
 }
 
 #dev {
   font-family: 'Syncopate';
-  font-size: 30px;
-  font-size: 3rem;
   line-height: 1;
 }
 
 #name {
   font-family: 'Ubuntu';
   font-weight: 600;
-  font-size: 30px;
-  font-size: 3rem;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 #main {
@@ -1844,4 +1840,41 @@ a {
 #footer {
   min-height: 100%;
   background: #a6a6a6;
+}
+
+#bigtext {
+  width: 240px;
+}
+@media (min-width: 800px) {
+  #bigtext {
+    width: 400px;
+  }
+}
+
+.container {
+  background: rgba(200, 200, 200, 0.4);
+}
+
+.group {
+  background: rgba(200, 200, 200, 0.5);
+}
+
+.region {
+  background: #a0a0a0;
+}
+
+.block {
+  background: #e6e6e6;
+}
+
+.content {
+  background: #c8c8c8;
+}
+
+h1, h2, h3, h4, p, li {
+  background: whitesmoke;
+}
+
+a {
+  background: white;
 }
