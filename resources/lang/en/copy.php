@@ -11,9 +11,13 @@ return [
 			'name' => 'George Petridis',
 			'title' => 'Web Developer',
 		],
-		'profile' => [
-			'title' => 'Profile',
-			'content' => 'I aim to constantly improve my workflow and implement the latest technology. My goal is to deliver high quality websites optimized for search engines and mobile devices so that businesses get the most out of their online profiles.',
+		'about' => [
+			'title' => 'All About',
+			'content' => [
+				'1' => 'Efficient Workflow',
+				'2' => 'Practical Design',
+				'3' => 'Quality Websites',
+			],
 		],
 		'services' => [
 			'title' => 'Services',

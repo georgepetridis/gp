@@ -13,12 +13,6 @@
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/modernizr.custom.js')}}"></script>
     <script src="{{asset('js/bigtext.js')}}"></script>
-    <script type="text/javascript">
-    $('#bigtext').bigtext();
-
-    </script>
-
-
 </head>
 <body>
 <script>
@@ -31,39 +25,6 @@
   ga('send', 'pageview');
 
 </script>
-
-
-<!-- <div id="doc">
-<div class="container" id="top-bar">
-    <div class="group">
-        <div class="region">
-            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-            <div class="{{$localeCode}} block">
-                <div class="content">
-                    <a class="btn-1" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                        {{{ $properties['native'] }}}
-                    </a>
-                </div>
-            </div>
-            @endforeach
-            <div class="block" id="tel">
-                <div class="content">
-                    <a class="btn-1" href="tel:15149754339">Call Me</a>
-                </div>
-            </div>
-            <div class="block" id="email">
-                <div class="content">
-                    <a class="btn-1" href="mailto:george@georgepetridis.com">Email Me</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="page">
-@yield('content')
-</div>
-</div> -->
-
 @yield('content')
 </body>
     <script src="{{asset('js/classie.js')}}"></script>
@@ -82,8 +43,6 @@ $(document).ready(function(){
             'scrollTop': $target.offset().top
         }, 900, 'swing');
     });
-
-
 
 });
 

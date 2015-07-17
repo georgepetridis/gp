@@ -4,27 +4,26 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300italic,300,400italic,500,500italic,700,700italic);
 @import url(http://fonts.googleapis.com/css?family=Days+One|Paytone+One);
 /* /Fonts */
+
 /* Libraries */
 @import "compass";
 @import "helpers/mixins";
 @import "helpers/placeholders";
 @import "helpers/flex";
 @import "helpers/normalize";
-@import "devicon/devicon";
-@import "devicon/devicon.colors";
+// @import "devicon/devicon";
+// @import "devicon/devicon.colors";
 /* /Libraries */
 
 /* Menu */
-// @import "menu/base";
 @import "menu/icon";
 @import "menu/style";
-
+/* /Menu */
 
 html {
 	font-size: 67%;
 	@include box-sizing(border-box);
 	height: 100%;
-
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
@@ -36,12 +35,12 @@ body {
 	height: 100%;
 	@extend %reset;
 	@include rem(font-size, 1.6rem);
+	font-weight: 300;
 	font-family: "Titillium Web";
 	text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4, p, ul {
 	@extend %reset;
-	font-weight: 300;
 }
 ul {
 	@include rem(padding-left, 1.6rem);
@@ -49,140 +48,95 @@ ul {
 a {
 	display: inline-block;
 }
+.group, .block {padding: 5px;}
+
 #page {
 	height: 100%;
 }
 #header {
+	height: 100%;
+	@include background(radial-gradient(8px 5px, lighten(black, 35%) 1px, black 300px));
+	.region:first-of-type { /* Logo */
+		height: 100%;
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(center);
+		@include align-items(center);
+	}
+	.region:nth-of-type(2) { /* Language Selector */
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}
+#about {
 	@include flexbox;
-	@include justify-content(center);
-	@include align-items(center);
-	@include background(radial-gradient(40px 25px, lighten(black, 35%) 1px, black 300px));
-	@media(min-width: 800px) {
-	@include background(radial-gradient(40px 25px, lighten(black, 35%) 1px, black 600px));
+	@include flex-direction(row);
+	min-height: 100%;
+	background: lighten(black, 15%);
+	.region:first-of-type {
+		.block {
+			width: 110px;
+			margin-top: 90px;
+			.content {
+				width: 100px;
+				height: 500px;
+				background-image: url(../images/george-petridis-web-developer.jpg);
+				background-position: center center;
+				background-repeat: no-repeat;
 
-	}
-	// background: lighten(black, 5%);
-	// padding: 0 20%;
-	.group {
-		// background-image: url(../images/screen.png);
-		// background-repeat: no-repeat;
-		// padding: 30px;
-		// height: 500px;
-		// background-size: 100%;
-
-	}
-	.region {
-		// min-height: 100%;
-		.group {
-			// position: relative;
-			// top: 50%;
+			}
 		}
 	}
-	// background-color: #ece7eb;
-	// @include background-image(radial-gradient(1px 1px, lighten(black, 40%) 1px, lighten(black, 10%) 200px));
-	// @include background-image(linear-gradient(lighten(black, 40%), lighten(black, 10%)));
-	// background-image: url(../images/mac-320x480.jpg);
-	// background-image: url(../images/mac-1920x1275.jpg);
-	// background-image: url("../images/mac-768x1024.jpg");
-	// @media(min-width: 360px) and (min-height: 640px) {background-image: url(../images/mac-360x640.jpg);}
-	// @media(min-width: 760px) and (min-height: 1020px) {background-image: url(../images/mac-768x1024.jpg);}
-	// @media(min-width: 1020px) and (min-height: 760px) {background-image: url(../images/mac-1024x768.jpg);}
-
-	// background-position: left bottom;
-	// background-position: 75% 100%;
-	// background-position-x: 50%;
-	// background-position-y: 0%;
-	// background-repeat: no-repeat;
-	// background-attachment: fixed;
-	// background-size: 100%;
-	height: 100%;
-	// width: 100%;
-	.region:first-of-type {
-		// padding: 90px 20px;
+	.region:nth-of-type(2) {
+		.content {
+			// @include background(radial-gradient(1px 1px, darken(white, 15%) 1px, cyan 300px));
+			padding: 60px 10px;
+			@include border-radius(150px);
+		}
+		.block:nth-of-type(1) {}
+		.block:nth-of-type(2) {
+			margin-left: 10px;
+			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(orange, 10%) 300px));}
+		}
+		.block:nth-of-type(3) {
+			margin-left: 20px;
+			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(green, 20%) 300px));}
+		}
+		.block:nth-of-type(4) {
+			margin-left: 30px;
+			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(red, 50%) 300px));}
+		}
 	}
 }
-#language {
-	// display: inline-block;
-	// position: absolute;
-	// bottom: 100px;
-	// right: 20px;
-}
-.container {
-		// padding: 20px 20px 20px 140px;
-
-}
-#web {
-	font-family: 'Syncopate';
-	@include rem(font-size, 7.2rem);
-	font-weight: bold;
-	// background: red
-	line-height: 0.8;
-	padding-left: 3px;
-
-}
-#dev {
-	font-family: 'Syncopate';
-	@include rem(font-size, 3rem);
-	// background: green;
-	// letter-spacing: 1px;
-	line-height: 0.8;
-}
-#name {
-	font-family: 'Ubuntu';
-	font-weight: 600;
-	// letter-spacing: 1px;
-	@include rem(font-size, 2.5rem);
-	line-height: 1.3;
-	// background: purple;
-}
-#main {
-	height: 100%;
-	background: orange;
-}
-#about {min-height: 100%; background: darken(white, 5%);}
-#projects {min-height: 100%; background: darken(white, 10%);}
-#skills {min-height: 100%; background: darken(white, 15%);}
-#contact {min-height: 100%; background: darken(white, 30%);}
-#footer {
+#projects {
+	@include flexbox;
+	@include flex-direction(row);
 	min-height: 100%;
-	background: darken(white, 35%);
-}
-#bigtext {
-	// span {display: block;}
-	color: white;
-	width: 240px;
-	// min-width: 240px;
-	// @media(min-height: 600px) {max-width: 250px;}
-	@media(min-width: 800px) {
-		width: 400px;
-		#web {@include rem(font-size, 12rem);}
-		#dev {@include rem(font-size, 5rem);}
-		#name {@include rem(font-size, 4.2rem);}
-	}
-	// @media(min-width: 1600px) and (min-height: 700px) {max-width: 380px;}
-}
-#menu.open + #page {
-		// background-position: 30% 100%;
-		// @include transition(background-position 1.3s);
-	#header {
-		// margin-left: 130px;
-		// @include transition(margin-left 1.3s);
-
-	}
-	#bigtext {
-		// color: white;
-	}
-}
-#menu.close + #page {
-		// background-position: 0% 100%;
-		// @include transition(background-position 1.3s);
-	#header {
-		// margin-left: 0px;
-		// @include transition(margin-left 1.3s);
-
-	}
-	#bigtext {
-		// color: black;
+	.region:nth-of-type(1) {
+		.block {
+			margin-top: 90px;
+			.content {
+				width: 120px;
+				height: 793px;
+				background-image: url(../images/loeys-dietz-sidebar.png);
+				background-position: left center;
+				background-repeat: no-repeat;
+			}
+		}
 	}
 }
 // @import 'helpers/wireframe';
+
+
+
+
+
+
+
+
+
+
+
+
+

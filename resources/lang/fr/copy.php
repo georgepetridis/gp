@@ -11,9 +11,13 @@ return [
 			'name' => 'George Petridis',
 			'title' => 'Dévelopeur Web'
 		],
-		'profile' => [
-			'title' => 'Profile',
-			'content' => 'Je vise à améliorer constamment mon flux de travail et de mettre en œuvre les dernières technologies. Mon objectif est de fournir des sites Web de haute qualité optimisés pour les moteurs de recherche et les appareils mobiles afin que les entreprises puissent tirer le maximum de leurs profils.',
+		'about' => [
+			'title' => 'Je Suis',
+			'content' => [
+				'1' => 'Efficient Workflow',
+				'2' => 'Practical Design',
+				'3' => 'Quality Websites',
+			],
 		],
 		'services' => [
 			'title' => 'Services',
