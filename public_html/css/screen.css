@@ -791,7 +791,10 @@ a {
 #about .region:first-of-type .block {
   width: 120px;
   min-height: 100%;
-  background: green;
+  background: #6a6f70;
+  background-image: url(../images/george-petridis-portrait-circle-100x100.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 #about .region:nth-of-type(2) .content {
   -moz-border-radius: 20px;
