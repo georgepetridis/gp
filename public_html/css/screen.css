@@ -726,8 +726,8 @@ a {
   display: inline-block;
 }
 
-.group, .block {
-  padding: 5px;
+.content {
+  padding: 20px;
 }
 
 #page {
@@ -789,24 +789,14 @@ a {
   background: #262626;
 }
 #about .region:first-of-type .block {
-  width: 110px;
-  margin-top: 90px;
-}
-#about .region:first-of-type .block .content {
-  width: 100px;
-  height: 500px;
-  background-image: url(../images/george-petridis-web-developer.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
+  width: 120px;
+  min-height: 100%;
+  background: green;
 }
 #about .region:nth-of-type(2) .content {
-  padding: 60px 10px;
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  border-radius: 150px;
-}
-#about .region:nth-of-type(2) .block:nth-of-type(2) {
-  margin-left: 10px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
 }
 #about .region:nth-of-type(2) .block:nth-of-type(2) .content {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMzAwJSI+PHN0b3Agb2Zmc2V0PSIwLjMzMzMzJSIgc3RvcC1jb2xvcj0iI2Q5ZDlkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmYjczMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -814,17 +804,11 @@ a {
   background: -webkit-radial-gradient(1px 1px, #d9d9d9 1px, #ffb733 300px);
   background: radial-gradient(1px 1px, #d9d9d9 1px, #ffb733 300px);
 }
-#about .region:nth-of-type(2) .block:nth-of-type(3) {
-  margin-left: 20px;
-}
 #about .region:nth-of-type(2) .block:nth-of-type(3) .content {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMzAwJSI+PHN0b3Agb2Zmc2V0PSIwLjMzMzMzJSIgc3RvcC1jb2xvcj0iI2Q5ZDlkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwZTYwMCIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background: -moz-radial-gradient(1px 1px, #d9d9d9 1px, #00e600 300px);
   background: -webkit-radial-gradient(1px 1px, #d9d9d9 1px, #00e600 300px);
   background: radial-gradient(1px 1px, #d9d9d9 1px, #00e600 300px);
-}
-#about .region:nth-of-type(2) .block:nth-of-type(4) {
-  margin-left: 30px;
 }
 #about .region:nth-of-type(2) .block:nth-of-type(4) .content {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMzAwJSI+PHN0b3Agb2Zmc2V0PSIwLjMzMzMzJSIgc3RvcC1jb2xvcj0iI2Q5ZDlkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
@@ -847,13 +831,38 @@ a {
   flex-direction: row;
   min-height: 100%;
 }
+#projects .region:nth-of-type(1) {
+  min-height: 100%;
+}
 #projects .region:nth-of-type(1) .block {
-  margin-top: 90px;
+  width: 120px;
+  min-height: 100%;
+  background: red;
 }
 #projects .region:nth-of-type(1) .block .content {
-  width: 120px;
-  height: 793px;
-  background-image: url(../images/loeys-dietz-sidebar.png);
-  background-position: left center;
-  background-repeat: no-repeat;
+  min-height: 100%;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.group {
+  background: rgba(200, 200, 200, 0.8);
+}
+
+.region {
+  background: rgba(160, 160, 160, 0.8);
+}
+
+.content {
+  background: rgba(200, 200, 200, 0.8);
+}
+
+h1, h2, h3, h4, p, li {
+  background: rgba(245, 245, 245, 0.8);
+}
+
+a {
+  background: rgba(255, 255, 255, 0.8);
 }

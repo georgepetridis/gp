@@ -23,9 +23,9 @@
     <header id="header" class="group">
         <div class="region">
             <div id="bigtext" class="block">
-                <div class="content" id="web">WEB</div>
-                <div class="content" id="dev">DEVELOPER</div>
-                <div class="content" id="name">GEORGE PETRIDIS</div>
+                <div class="" id="web">WEB</div>
+                <div class="" id="dev">DEVELOPER</div>
+                <div class="" id="name">GEORGE PETRIDIS</div>
             </div>
         </div>
         <div class="region">
@@ -46,7 +46,7 @@
     <div id="about" class="group">
         <div class="region">
             <div class="block">
-                <div class="content"></div>
+
             </div>
         </div>
         <div class="region">
@@ -68,7 +68,7 @@
     <div id="projects" class="group">
         <div class="region">
             <div class="block">
-                <div class="content"></div>
+
             </div>
         </div>
         <div class="region">
