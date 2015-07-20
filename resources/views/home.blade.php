@@ -46,7 +46,7 @@
     <div id="about" class="group">
         <div class="region">
             <div class="block">
-
+                <img src="images/george-petridis-web-developer-175x500.jpg">
             </div>
         </div>
         <div class="region">

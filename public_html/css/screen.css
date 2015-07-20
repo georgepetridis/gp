@@ -459,6 +459,7 @@ th {
 /* transition: <property> <duration> <timing function> <delay> */
 #menu {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -726,6 +727,10 @@ a {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+}
+
 .content {
   padding: 20px;
 }
@@ -792,14 +797,10 @@ a {
   width: 120px;
   min-height: 100%;
   background: #6a6f70;
-  background-image: url(../images/george-petridis-portrait-circle-100x100.gif);
-  background-position: center center;
-  background-repeat: no-repeat;
 }
-#about .region:nth-of-type(2) .content {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
+#about .region:first-of-type .block img {
+  position: relative;
+  top: 90px;
 }
 #about .region:nth-of-type(2) .block:nth-of-type(2) .content {
   background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjFweCIgY3k9IjFweCIgcj0iMzAwJSI+PHN0b3Agb2Zmc2V0PSIwLjMzMzMzJSIgc3RvcC1jb2xvcj0iI2Q5ZDlkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmYjczMyIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
