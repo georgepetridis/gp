@@ -67,16 +67,15 @@
 {{-- PROJECTS --}}
     <div id="projects" class="group">
         <div class="region">
-            <div class="block">
-
-            </div>
+            <div class="block">block 1</div>
+            <div class="block"><h1 class="content">Projects</h1></div>
         </div>
         <div class="region">
-            <div class="block"><h1 class="content">Projects</h1></div>
-            <div class="block"><div class="content">project 1</div></div>
-            <div class="block"><div class="content">project 2</div></div>
-            <div class="block"><div class="content">project 3</div></div>
-            <div class="block"><div class="content">project 4</div></div>
+
+            <div class="block">block a</div>
+            <div class="block">block b</div>
+            <div class="block">block c</div>
+            <div class="block">block d</div>
         </div>
     </div>
 

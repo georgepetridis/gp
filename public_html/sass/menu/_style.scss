@@ -78,7 +78,7 @@
 	}
 	.trigger {
 		$trigger-color: black;
-		background: rgba(255,255,255,0.8);
+		background: rgba(255,255,255,0.2);
 		@include transition(background 0.3s);
 		position: fixed;
 		top: 20px;
