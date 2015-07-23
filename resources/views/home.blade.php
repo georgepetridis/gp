@@ -5,12 +5,12 @@
 <div id="page" class="container">
 {{-- MENU --}}
     <nav id="menu">
-        <a href="" class="trigger"><span>Menu</span></a>
+        <div class="trigger"><span>Menu</span></div>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="m" href="#about">About</a></li>
+            <li><a class="m" href="#projects">Projects</a></li>
+            <li><a class="m" href="#skills">Skills</a></li>
+            <li><a class="m" href="#contact">Contact</a></li>
         </ul>
         <ul>
             <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
@@ -28,19 +28,20 @@
                 <div class="" id="name">GEORGE PETRIDIS</div>
             </div>
         </div>
-        <div class="region">
+        <div id="language" class="region">
 
         @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
             <div class="{{$localeCode}} block">
                 <div class="content">
                     <a class="btn-1" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
-                    {{{ $properties['native'] }}}
+                    {{ $localeCode }}
                     </a>
                 </div>
             </div>
         @endforeach
 
         </div>
+
     </header>
 {{-- ABOUT --}}
     <div id="about" class="group">
@@ -67,15 +68,19 @@
 {{-- PROJECTS --}}
     <div id="projects" class="group">
         <div class="region">
-            <div class="block">block 1</div>
+            <div class="block"></div>
             <div class="block"><h1 class="content">Projects</h1></div>
         </div>
         <div class="region">
 
-            <div class="block">block a</div>
-            <div class="block">block b</div>
-            <div class="block">block c</div>
-            <div class="block">block d</div>
+            <div class="block">
+                <div><img src="images/logo-ldcanada-400x100.png"></div>
+                <div><a href="">Case Study</a></div>
+                <div><a href="http://loeysdietzcanada.org" target="blank">Visit Website</a></div>
+            </div>
+            <div class="block"><div><img src="images/logo-stergios-400x100.png"></div></div>
+            <div class="block"><div><img src="images/logo-roxysdesigns-400x100.png"></div></div>
+            <div class="block"><div><img src="images/logo-coolbasslines-400x100.png"></div></div>
         </div>
     </div>
 

@@ -12,7 +12,7 @@ return [
 			'title' => 'Web Developer',
 		],
 		'about' => [
-			'title' => 'All About',
+			'title' => 'About',
 			'content' => [
 				'1' => 'Efficient Workflow',
 				'2' => 'Practical Design',

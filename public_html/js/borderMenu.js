@@ -9,7 +9,6 @@
  * http://www.codrops.com
  */
 (function() {
-
  	// http://stackoverflow.com/a/11381730/989439
 	function mobilecheck() {
 		var check = false;
@@ -18,22 +17,25 @@
 	}
 
 	function init() {
+		// var menu = document.getElementById( 'menu' );
+		var menu = $('#menu')[0];
+		var	trigger = menu.querySelector( 'div.trigger' );
+		var m = $('.m'); // Instead of this, replace it by finding all 'ul>a' within #menu.
 
-		var menu = document.getElementById( 'menu' ),
-			trigger = menu.querySelector( 'a.trigger' ),
-			// event type (if mobile use touch events)
-			eventtype = mobilecheck() ? 'touchstart' : 'click',
-			resetMenu = function() {
+		// event type (if mobile use touch events)
+		var	eventtype = mobilecheck() ? 'touchstart' : 'click';
+		var	resetMenu = function() {
 				classie.remove( menu, 'open' );
 				classie.add( menu, 'close' );
-			},
-			closeClickFn = function( ev ) {
+			};
+		var	closeClickFn = function( ev ) {
 				resetMenu();
 				overlay.removeEventListener( eventtype, closeClickFn );
 			};
-
 		var overlay = document.createElement('div');
+
 		overlay.className = 'overlay';
+
 		menu.appendChild( overlay );
 
 		trigger.addEventListener( eventtype, function( ev ) {
@@ -47,8 +49,14 @@
 				classie.remove( menu, 'close' );
 				classie.add( menu, 'open' );
 				overlay.addEventListener( eventtype, closeClickFn );
+				m.each(function() {
+					this.addEventListener(eventtype, closeClickFn);
+				});
 			}
 		});
+		// console.log(trigger2);
+		// console.log(menu);
+		// console.log(m);
 	}
 
 	init();

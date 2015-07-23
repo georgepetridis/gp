@@ -28,6 +28,8 @@ html {
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
 }
+html[lang=en] {.en {display: none;}}
+html[lang=fr] {.fr {display: none;}}
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -52,13 +54,12 @@ img {
 	max-width: 100%;
 	width: 100%;
 }
-.content {padding: 20px;}
 #page {
 	height: 100%;
 }
 #header {
 	height: 100%;
-	@include background(radial-gradient(8px 5px, lighten(black, 35%) 1px, black 300px));
+	background: url(../images/mac-1920x1275.jpg) repeat scroll center center / cover;
 	.region:first-of-type { /* Logo */
 		height: 100%;
 		@include flexbox;
@@ -70,25 +71,35 @@ img {
 		position: absolute;
 		top: 20px;
 		right: 20px;
+		width: 80px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		text-transform: uppercase;
+		@include rem(font-size, 2.4rem);
+		background: rgba(200,200,200,0.5);
+		font-family: "Ubuntu";
+		font-weight: 400;
+		a {text-decoration: none; color: black;}
 	}
 }
 #bigtext {
-	> div {color: white;}
+	> div {color: black;}
 }
 #about {
 	@include flexbox;
 	@include flex-direction(row);
 	min-height: 100%;
-	background: lighten(black, 15%);
+	// background: lighten(black, 15%);
 	.region:first-of-type {
 		.block {
 			min-width: 120px;
 			min-height: 100%;
-			background: #6a6f70;
+			// background: #6a6f70;
 			// position: relative;
 			img {
-				position: relative;
-				top: 0;
+				// position: relative;
+				// top: 0;
 			}
 		}
 	}
@@ -97,17 +108,17 @@ img {
 		@include flexbox;
 		@include flex-direction(column);
 		.content {
-			// @include border-radius(20px); 
+			white-space: nowrap;
 		}
 		.block:nth-of-type(1) {}
 		.block:nth-of-type(2) {
-			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(orange, 10%) 300px));}
+			// .content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(orange, 10%) 300px));}
 		}
 		.block:nth-of-type(3) {
-			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(green, 20%) 300px));}
+			// .content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(green, 20%) 300px));}
 		}
 		.block:nth-of-type(4) {
-			.content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(red, 50%) 300px));}
+			// .content {@include background(radial-gradient(1px 1px, darken(white, 15%) 1px, lighten(red, 50%) 300px));}
 		}
 	}
 }
@@ -118,10 +129,9 @@ img {
 	.region:nth-of-type(1) {
 		@include flexbox;
 		@include flex-direction(row);
-		background: gray;a
 		.block {
 			min-height: 90px;
-			border: 1px solid red;
+			// border: 1px solid red;
 			img {
 				position: relative;
 				top: 0;
@@ -135,15 +145,28 @@ img {
 		}
 	}
 	.region:nth-of-type(2) {
-		min-height: 300px;
-		@include flex(1 0 0);
+		// @include flex(1 0 0);
 		@include flexbox;
-		@include flex-direction(row);
-		@include flex-wrap(wrap);
+		@include flex-direction(column);
+		// @include flex-wrap(wrap);
+		padding: 5px;
 		.block {
-			width: 50%;
-			border: 1px solid blue;
+			// width: 50%;
+			// height: 25%;
+			height: 200px;
+			// background-color: rgba(200,200,200,0.8);
+			border: 1px solid black;
+			@include border-radius(5px);
+			padding: 5px;
+			margin-bottom: 5px;
+			> div {
+				// border: 2px solid orange;
+			}
 		}
+		.block:nth-of-type(1) {}  
+		.block:nth-of-type(2) {}
+		.block:nth-of-type(3) {}
+		.block:nth-of-type(4) {}
 	}
 }
 // @import 'helpers/wireframe';
