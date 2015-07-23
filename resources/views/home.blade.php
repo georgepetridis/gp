@@ -41,6 +41,7 @@
         @endforeach
 
         </div>
+        <div class="noise"></div>
 
     </header>
 {{-- ABOUT --}}

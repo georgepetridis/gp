@@ -59,7 +59,8 @@ img {
 }
 #header {
 	height: 100%;
-	background: url(../images/mac-1920x1275.jpg) repeat scroll center center / cover;
+	background: url("../images/mac-1920x1275.jpg") repeat scroll center center / cover;
+	// z-index: 1;
 	.region:first-of-type { /* Logo */
 		height: 100%;
 		@include flexbox;
@@ -76,15 +77,51 @@ img {
 		line-height: 50px;
 		text-align: center;
 		text-transform: uppercase;
-		@include rem(font-size, 2.4rem);
+		@include rem(font-size, 2.8rem);
 		background: rgba(200,200,200,0.5);
 		font-family: "Ubuntu";
 		font-weight: 400;
-		a {text-decoration: none; color: black;}
+		z-index: 5;
+		a {
+			text-decoration: none; 
+			color: black;
+			letter-spacing: 3px;
+		}
+	}
+	.noise {
+		background: url("../images/noise.png") repeat scroll 0 0;
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    top: 0;
+	    opacity: 0.5;
+	    // z-index: 2;
 	}
 }
 #bigtext {
-	> div {color: black;}
+	border: 5px solid white;
+	background: rgba(255,255,255,0.9);
+	@include border-radius(5px);
+	padding: 15px 20px;
+	> div {
+		color: black;
+		text-align: center;
+	}
+	div:nth-of-type(1) {
+		@include rem(font-size, 7.7rem);
+		@include rem(line-height, 6rem);
+		font-weight: 900;
+	}
+	div:nth-of-type(2) {
+		@include rem(font-size, 3rem);
+		@include rem(line-height, 3.2rem);
+		font-weight: 200; 
+	}
+	div:nth-of-type(3) {
+		@include rem(font-size, 2rem);
+		@include rem(line-height, 2.2rem);
+		font-weight: 600;
+	}
 }
 #about {
 	@include flexbox;

@@ -86,6 +86,7 @@
 		width: 80px;
 		height: 50px;
 		cursor: pointer;
+		z-index: 5;
 		span {
 			position: absolute;
 			top: 45%;
@@ -132,6 +133,7 @@
 			visibility: visible;
 			opacity: 1;
 			@include transition(transform 0.3s, opacity 0.3s 0.1s);
+			z-index: 10;
 		}
 	}
 	ul:first-of-type {
