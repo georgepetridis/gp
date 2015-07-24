@@ -102,25 +102,35 @@ img {
 	border: 5px solid white;
 	background: rgba(255,255,255,0.9);
 	@include border-radius(5px);
-	padding: 15px 20px;
-	> div {
+	padding: 15px 30px;
+	> span {
 		color: black;
 		text-align: center;
 	}
-	div:nth-of-type(1) {
-		@include rem(font-size, 7.7rem);
-		@include rem(line-height, 6rem);
+	span:nth-of-type(1) {
+		display: block;
+		@include rem(font-size, 8.0rem);
+		@include rem(line-height, 7.6rem);
 		font-weight: 900;
 	}
-	div:nth-of-type(2) {
-		@include rem(font-size, 3rem);
-		@include rem(line-height, 3.2rem);
+	span:nth-of-type(2) {
+		display: block;
+		@include rem(font-size, 3.1rem);
+		@include rem(line-height, 2.4rem);
 		font-weight: 200; 
 	}
-	div:nth-of-type(3) {
-		@include rem(font-size, 2rem);
-		@include rem(line-height, 2.2rem);
+	span:nth-of-type(3) {
+		@include rem(font-size, 2.0rem);
+		@include rem(line-height, 3.4rem);
 		font-weight: 600;
+		padding-left: 3px;
+		color: darken(purple, 5%);
+	}
+	.typed-cursor {
+		@include rem(font-size, 2.0rem);
+		@include rem(line-height, 3.0rem);
+		font-weight: 900;
+		padding-left: 1px;
 	}
 }
 #about {
@@ -208,6 +218,29 @@ img {
 }
 // @import 'helpers/wireframe';
 
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
 
 
 

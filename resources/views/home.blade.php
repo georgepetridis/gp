@@ -23,9 +23,9 @@
     <header id="header" class="group">
         <div class="region">
             <div id="bigtext" class="block">
-                <div class="" id="web">WEB</div>
-                <div class="" id="dev">DEVELOPER</div>
-                <div class="" id="name">GEORGE PETRIDIS</div>
+                <span class="">WEB</span>
+                <span class="">DEVELOPER</span>
+                <span class="element">GEORGE PETRIDIS</span>
             </div>
         </div>
         <div id="language" class="region">
@@ -44,6 +44,14 @@
         <div class="noise"></div>
 
     </header>
+<script>
+  $(function(){
+      $(".element").typed({
+        strings: ["AND DESIGNER", "GEORGE PETRIDIS"],
+        typeSpeed: 20,
+      });
+  });
+</script>
 {{-- ABOUT --}}
     <div id="about" class="group">
         <div class="region">

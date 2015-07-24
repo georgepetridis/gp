@@ -13,6 +13,8 @@
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/modernizr.custom.js')}}"></script>
     <script src="{{asset('js/bigtext.js')}}"></script>
+    <script src="../js/typed.js"></script>
+    
 
 </head>
 <body>
