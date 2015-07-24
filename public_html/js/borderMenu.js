@@ -49,9 +49,9 @@
 				classie.remove( menu, 'close' );
 				classie.add( menu, 'open' );
 				overlay.addEventListener( eventtype, closeClickFn );
-				// m.each(function() {
-					// this.addEventListener(eventtype, closeClickFn);
-				// });
+				m.each(function() {
+					this.addEventListener(eventtype, closeClickFn);
+				});
 			}
 		});
 		// console.log(trigger2);

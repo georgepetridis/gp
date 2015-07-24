@@ -130,11 +130,13 @@
 	@include transition(border-width 0.3s, background-color 0.3s);
 	z-index: 3;
 	ul {
+		z-index: 5;
 		li {
 			visibility: visible;
 			opacity: 1;
 			@include transition(transform 0.3s, opacity 0.3s 0.1s);
 			z-index: 10;
+			a {z-index: 15;}
 		}
 	}
 	ul:first-of-type {

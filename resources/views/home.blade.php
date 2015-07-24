@@ -7,10 +7,10 @@
     <nav id="menu">
         <div class="trigger"><span>Menu</span></div>
         <ul>
-            <li><a class="m" href="#about">About</a></li>
-            <li><a class="m" href="#projects">Projects</a></li>
-            <li><a class="m" href="#skills">Skills</a></li>
-            <li><a class="m" href="#contact">Contact</a></li>
+            <li class="m"><a href="#about">About</a></li>
+            <li class="m"><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
             <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>

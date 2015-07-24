@@ -620,6 +620,9 @@ th {
   transition: border-width 0.3s, background-color 0.3s;
   z-index: 3;
 }
+#menu.open ul {
+  z-index: 5;
+}
 #menu.open ul li {
   visibility: visible;
   opacity: 1;
@@ -629,6 +632,9 @@ th {
   -webkit-transition-delay: 0s, 0.1s;
   transition: transform 0.3s, opacity 0.3s 0.1s;
   z-index: 10;
+}
+#menu.open ul li a {
+  z-index: 15;
 }
 #menu.open ul:first-of-type {
   left: 0;
