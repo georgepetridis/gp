@@ -400,7 +400,7 @@
         // false = infinite
         loopCount: false,
         // show cursor
-        showCursor: true,
+        showCursor: false, // cursor causes high cpu usage with firefox (60%)
         // character for cursor
         cursorChar: "|",
         // attribute to type (null == text)

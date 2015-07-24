@@ -9,12 +9,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/screen.css')}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/modernizr.custom.js')}}"></script>
-    <script src="{{asset('js/bigtext.js')}}"></script>
     <script src="../js/typed.js"></script>
-    
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/wow.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+
+
 
 </head>
 <body>
@@ -34,7 +38,12 @@
     <script src="{{asset('js/borderMenu.js')}}"></script>
 <script type="text/javascript">
     
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $(".element").typed({
+        strings: ["AND DESIGNER", "GEORGE PETRIDIS"],
+        typeSpeed: 20,
+    });
 
     $('a[href^="#"]').on('click',function (e) {
         e.preventDefault();

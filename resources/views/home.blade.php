@@ -20,9 +20,9 @@
         </ul>
     </nav>
 {{-- HEADER --}}
-    <header id="header" class="group">
+    <header id="header" class="group parallax-window" data-parallax="scroll" data-image-src="images/mac-1920x1275.jpg">
         <div class="region">
-            <div id="bigtext" class="block">
+            <div id="bigtext" class="wow pulse block">
                 <span class="">WEB</span>
                 <span class="">DEVELOPER</span>
                 <span class="element">GEORGE PETRIDIS</span>
@@ -44,40 +44,25 @@
         <div class="noise"></div>
 
     </header>
-<script>
-  $(function(){
-      $(".element").typed({
-        strings: ["AND DESIGNER", "GEORGE PETRIDIS"],
-        typeSpeed: 20,
-      });
-  });
-</script>
 {{-- ABOUT --}}
     <div id="about" class="group">
         <div class="region">
-            <div class="block">
-                <img src="images/george-petridis-web-developer-175x500.jpg">
+            <div class="block"><h1>About</h1></div>
+        </div>
+        <div class="region">
+            <div class="wow fadeInDown block">
+                <p>Developer and Designer with a relentless attention to detail. The final product aims to help businesses get the most out of their online profiles.</p>            
             </div>
         </div>
         <div class="region">
-            <div class="block">
-                <h1 class="content">{{ $data['about']['title'] }}</h1>
-            </div>
-            <div class="block">
-                <p class="content">{{ $data['about']['content'][1] }}</p>
-            </div> 
-            <div class="block">
-                <p class="content">{{ $data['about']['content'][2] }}</p>
-            </div>
-            <div class="block">
-                <p class="content">{{ $data['about']['content'][3] }}</p>
+            <div class="wow fadeInUp block">            
+                <img src="images/george-petridis-web-developer-portrait.jpg">
             </div>
         </div>
     </div>
 {{-- PROJECTS --}}
-    <div id="projects" class="group">
+    <div id="projects" class="group parallax-window" data-parallax="scroll" data-image-src="images/office.jpg">
         <div class="region">
-            <div class="block"></div>
             <div class="block"><h1 class="content">Projects</h1></div>
         </div>
         <div class="region">
