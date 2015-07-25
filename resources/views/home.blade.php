@@ -61,7 +61,7 @@
         </div>
     </div>
 {{-- PROJECTS --}}
-    <div id="projects" class="group parallax-window" data-parallax="scroll" data-image-src="images/office.jpg">
+    <div id="projects" class="group">
         <div class="region">
             <div class="block"><h1 class="content">Projects</h1></div>
         </div>
