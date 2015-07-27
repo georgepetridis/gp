@@ -41,7 +41,8 @@
         @endforeach
 
         </div>
-        <div class="noise"></div>
+        <div class="noise"><div>Website Under Construction</div></div>
+
 
     </header>
 {{-- ABOUT --}}

@@ -3655,6 +3655,11 @@ img {
   opacity: 0.5;
   z-index: 2;
 }
+#header .noise > div {
+  text-align: right;
+  color: orange;
+  padding: 70px 20px;
+}
 
 #bigtext {
   border: 5px solid white;

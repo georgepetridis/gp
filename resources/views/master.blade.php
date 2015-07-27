@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="{{{ $data['head']['description'] or '' }}}">
 	<meta name="author" content="George Petridis">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="{{asset('css/screen.css')}}">
     <script type="text/javascript" src="{{asset('js/jquery/jquery.min.js')}}"></script>
