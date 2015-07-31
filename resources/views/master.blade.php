@@ -56,6 +56,8 @@ $(document).ready(function() {
         }, 900, 'swing');
     });
 
+    $('body').bind('touchstart', function() {});
+
 });
 
 </script>
