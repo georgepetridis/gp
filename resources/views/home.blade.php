@@ -69,13 +69,20 @@
         <div class="region">
 
             <div class="block">
-                <div><img src="images/logo-ldcanada-400x100.png"></div>
-                <div><a href="">Case Study</a></div>
-                <div><a href="http://loeysdietzcanada.org" target="blank">Visit Website</a></div>
+                <div>
+                    <img src="images/ldcanada-500x500.png">
+                    <div class="bg"></div>
+                </div>
             </div>
-            <div class="block"><div><img src="images/logo-stergios-400x100.png"></div></div>
-            <div class="block"><div><img src="images/logo-roxysdesigns-400x100.png"></div></div>
-            <div class="block"><div><img src="images/logo-coolbasslines-400x100.png"></div></div>
+            <div class="block">
+                <div><img src="images/stergios-500x500.png"></div>
+            </div>
+            <div class="block">
+                <div><img src="images/roxys-500x500.png"></div>
+            </div>
+            <div class="block">
+                <div><img src="images/logo-coolbasslines-400x100.png"></div>
+            </div>
         </div>
     </div>
 
