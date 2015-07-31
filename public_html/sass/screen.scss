@@ -214,10 +214,22 @@ img {
 				height: 100%;
 				width: 100%;
 				@include transition(background 0.3s);
+				@include flexbox;
+				@include justify-content(center);
+				@include align-items(center);
+				a {
+					font-size: 0;
+					@include transition(font-size, 0.3s);
+					color: white;	
+				}
 			}
 			.bg:hover {
 				background: rgba(100,100,100,0.7);
 				@include transition(background 0.3s);
+				a {
+					@include rem(font-size, 2rem);
+					@include transition(font-size, 0.1s);	
+				}
 			}
 		}
 		.block:nth-of-type(1) {}  
