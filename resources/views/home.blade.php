@@ -9,7 +9,6 @@
         <ul>
             <li class="m"><a href="#about">About</a></li>
             <li class="m"><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
@@ -60,6 +59,31 @@
                 <img src="images/george-petridis-web-developer-portrait.jpg">
             </div>
         </div>
+        <div class="region">
+            <div class="wow fadeInLeft block">
+                <i class="fa fa-cog fa-spin"></i>
+                <ul>
+                    <li>Web Design and Development</li>
+                    <li>Web Hosting</li>
+                    <li>Search Engine Optimization</li>
+                </ul>           
+            </div>
+            <div class="wow fadeInUp block">
+                <i class="fa fa-desktop"></i>
+                <i class="fa fa-tablet"></i>
+                <i class="fa fa-mobile"></i>
+                <p>Efficient multi-device responsive design so your website looks great on all screen sizes.</p>            
+            </div>
+            <div class="wow fadeInRight block">
+                <i class="fa fa-graduation-cap"></i>
+                <ul>
+                    <li>Diploma in Web Programming</li>
+                    <li>Certificate in Programming Fundamentals</li>
+                    <li>Certificate in Web Development</li>
+                    <li>Certificate in PHP/MySQL Web Applications</li>
+                </ul>          
+            </div>
+        </div>
     </div>
 {{-- PROJECTS --}}
     <div id="projects" class="group">
@@ -92,9 +116,12 @@
                     </div>
                 </div>
             </div>
-            <div class="block">
-                <div><img src="images/logo-coolbasslines-400x100.png"></div>
-            </div>
+        </div>
+    </div>
+{{-- CONTACT --}}
+    <div id="contact">
+        <div class="region">
+            
         </div>
     </div>
 
