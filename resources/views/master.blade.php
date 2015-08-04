@@ -42,7 +42,9 @@ $(document).ready(function() {
 
     $(".element").typed({
         strings: ["AND DESIGNER", "GEORGE PETRIDIS"],
+        startDelay: 1500,
         typeSpeed: 20,
+        backDelay: 1000,
     });
 
     $('a[href^="#"]').on('click',function (e) {

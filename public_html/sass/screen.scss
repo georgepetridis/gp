@@ -82,7 +82,7 @@ img {
 		text-align: center;
 		text-transform: uppercase;
 		@include rem(font-size, 2.8rem);
-		background: rgba(200,200,200,0.5);
+		// background: rgba(200,200,200,0.5);
 		font-family: "Ubuntu";
 		font-weight: 400;
 		z-index: 5;
@@ -130,7 +130,7 @@ img {
 		font-weight: 200; 
 	}
 	span:nth-of-type(3) {
-		@include rem(font-size, 2.0rem);
+		@include rem(font-size, 2.05rem);
 		@include rem(line-height, 3.4rem);
 		font-weight: 600;
 		padding-left: 3px;
@@ -277,9 +277,9 @@ img {
 	.region:nth-of-type(1) {
 		h1 {
 			display: inline-block;
-			background: rgba(255,255,255,0.9);
+			// background: rgba(255,255,255,0.9);
 			padding: 20px;
-			@include text-shadow(white 0 1px 3px);
+			@include text-shadow(white 0 1px 1px);
 		}
 		.block {
 			// text-align: right;

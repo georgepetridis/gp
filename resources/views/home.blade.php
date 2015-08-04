@@ -27,7 +27,7 @@
         </div>
         <div id="language" class="region">
 
-        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+<!--         @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
             <div class="{{$localeCode}} block">
                 <div class="content">
                     <a class="btn-1" rel="alternate" hreflang="{{$localeCode}}" href="{{LaravelLocalization::getLocalizedURL($localeCode) }}">
@@ -35,10 +35,10 @@
                     </a>
                 </div>
             </div>
-        @endforeach
+        @endforeach -->
 
         </div>
-        <div class="noise"><div>Website Under Construction</div></div>
+        <div class="noise"><div></div></div>
 
 
     </header>
@@ -117,7 +117,7 @@
         </div>
     </div>
 {{-- CONTACT --}}
-    <div id="contact" class="group parallax-window" data-parallax="scroll" data-image-src="images/get-in-touch.jpg">
+    <div id="contact" class="group parallax-window" data-parallax="scroll" data-image-src="images/contact-me.jpg">
 
 
         <div class="region">
