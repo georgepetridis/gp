@@ -12,9 +12,7 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <ul>
-            <li><a href="http://www.twitter.com/codrops" class="bt-icon icon-twitter">Twitter</a></li>
-            <li><a href="https://plus.google.com/101095823814290637419" class="bt-icon icon-google-plus">Google+</a></li>
-            <li><a href="http://www.facebook.com/pages/Codrops/159107397912" class="bt-icon icon-linkedin2">LinkedIn</a></li>
+            <li><a href="https://ca.linkedin.com/in/georgepetridis" class="bt-icon icon-linkedin2" target="blank">LinkedIn</a></li>
             <li><a href="https://github.com/georgepetridis" target="blank" class="bt-icon icon-github">icon-github</a></li>
         </ul>
     </nav>
@@ -61,7 +59,7 @@
         </div>
         <div class="region">
             <div class="wow fadeInLeft block">
-                <i class="fa fa-cog fa-spin"></i>
+                <i class="fa fa-cog"></i>
                 <ul>
                     <li>Web Design and Development</li>
                     <li>Web Hosting</li>
@@ -88,7 +86,7 @@
 {{-- PROJECTS --}}
     <div id="projects" class="group">
         <div class="region">
-            <div class="block"><h1 class="content">Projects</h1></div>
+            <div class="block"><h1 class="content">Recent Projects</h1></div>
         </div>
         <div class="region">
 
@@ -119,10 +117,28 @@
         </div>
     </div>
 {{-- CONTACT --}}
-    <div id="contact">
+    <div id="contact" class="group parallax-window" data-parallax="scroll" data-image-src="images/get-in-touch.jpg">
+
+
         <div class="region">
-            
+            <div class="block">
+                <h1>Contact Me</h1>
+            </div>
         </div>
+        <div class="region">
+            <div class="block">
+                <a href="mailto:george@georgepetridis.com">
+                    <i class= "fa fa-envelope"></i>
+                </a>
+            </div>
+            <div class="block">
+                <a href="https://ca.linkedin.com/in/georgepetridis">
+                    <i class= "fa fa-linkedin-square"></i>
+                </a>
+            </div>    
+        </div>
+
+
     </div>
 
 </div>{{-- /#page --}}

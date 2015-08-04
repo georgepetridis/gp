@@ -154,14 +154,17 @@ img {
 		width: 100%;
 		h1 {
 			text-align: right;
+			@include text-shadow(white 0 1px 3px);
+
 		}
 	}
 	.region:nth-of-type(2) {
 		max-width: 500px;
 		.block {
 			// background: #cabaa8;
-			background: lighten(black, 15%);
-			color: darken(white, 5%);
+			// background: lighten(black, 15%);
+			background: darken(white, 5%);
+			// color: #cabaa8;
 		}
 	}
 	.region:nth-of-type(3) {
@@ -202,6 +205,7 @@ img {
 			display: inline-block;
 			background: rgba(255,255,255,0.4);
 			padding: 20px;
+			@include text-shadow(white 0 1px 3px);
 		}
 		.block {
 			text-align: right;
@@ -266,6 +270,46 @@ img {
 }
 #contact {
 	min-height: 100%;
+	@include flexbox;
+	@include justify-content(center);
+	@include align-items(center);
+	@include flex-direction(column);
+	.region:nth-of-type(1) {
+		h1 {
+			display: inline-block;
+			background: rgba(255,255,255,0.9);
+			padding: 20px;
+			@include text-shadow(white 0 1px 3px);
+		}
+		.block {
+			// text-align: right;
+			// padding: 20px;
+
+			// background: url("../images/contact.jpg") no-repeat center bottom / cover;
+		}
+	}
+	.region:nth-of-type(2) {
+		@include flexbox;
+		@include flex-direction(row);
+		@include justify-content(center);
+		.block {
+			padding: 20px;
+			.fa {
+				display: block;
+				// border: 1px solid black;
+			}
+			.fa-envelope {
+				@include rem(font-size, 10rem);
+			}
+			.fa-linkedin-square {
+				@include rem(font-size, 10rem);
+			}
+			a {
+				text-decoration: none;
+				color: black;
+			}
+		}
+	}
 }
 // @import 'helpers/wireframe';
 
